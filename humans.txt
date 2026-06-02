@@ -1,0 +1,28 @@
+/* TEAM */
+Founder: 〇〇〇〇
+Role: Designer / Developer / 全部
+Location: Tokyo, Japan
+Contact: aiweb.lab.jp@gmail.com
+
+/* THANKS */
+Claude, Cursor, Figma, そして深夜のコンビニコーヒー。
+コードを書きながら聴いた lo-fi hip hop。
+壁打ちに付き合ってくれた大学の友人たち。
+
+/* SITE */
+Last update: 2026/06/02
+Standards: HTML5 / CSS Grid / ES2024 / Vanilla JS
+Components: 手書き（フレームワークなし）
+Tools: VS Code + Cursor / Claude / Figma / Inter / Instrument Serif / Caveat
+Note: AIに作らせてるけど、このファイルは手で書いてます。
+
+/* MEMO */
+Web制作の依頼は受付中です（月3枠まで）。
+パーソナルジム・サロン・コーチの個人事業主の方が中心。
+法人案件は今のところやってません。
+
+           _                _       _       _
+   __ _ _(_)_      _____| |__   | | __ _| |__
+  / _` | \ \ /\ / / _ \ '_ \  | |/ _` | '_ \
+ | (_| | |\ V  V /  __/ |_) | | | (_| | |_) |
+  \__,_|_| \_/\_/ \___|_.__/  |_|\__,_|_.__/

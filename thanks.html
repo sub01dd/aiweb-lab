@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,nofollow">
+<title>送信完了 | aiweb-lab</title>
+<link rel="stylesheet" href="assets/css/style.css">
+<style>
+  .thanks{min-height:100svh;display:grid;place-items:center;padding:80px 24px;text-align:center}
+  .thanks h1{font-size:clamp(28px,4vw,42px);margin-bottom:16px;letter-spacing:-.02em}
+  .thanks p{color:var(--fg-muted);max-width:560px;margin:0 auto 16px;line-height:1.85}
+  .check-mark{
+    width:80px;height:80px;border-radius:50%;
+    background:var(--grad);display:grid;place-items:center;
+    margin:0 auto 28px;
+    box-shadow:0 0 60px -10px rgba(110,231,255,.5);
+  }
+  .check-mark svg{width:40px;height:40px;color:#0a0c10}
+</style>
+</head>
+<body>
+<header class="site-header" data-elevated="true">
+  <div class="container header-inner">
+    <a href="index.html" class="brand">
+      <span class="brand-mark"><svg viewBox="0 0 32 32" width="28" height="28"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6ee7ff"/><stop offset="100%" stop-color="#a78bfa"/></linearGradient></defs><rect x="2" y="2" width="28" height="28" rx="8" fill="none" stroke="url(#lg)" stroke-width="2"/><path d="M10 22 L16 10 L22 22 M12.5 18 H19.5" stroke="url(#lg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span>
+      <span class="brand-text">aiweb-lab</span>
+    </a>
+  </div>
+</header>
+<main class="thanks">
+  <div>
+    <div class="check-mark"><svg viewBox="0 0 24 24" fill="none"><path d="M5 12l5 5 9-11" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg></div>
+    <h1>送信ありがとうございます</h1>
+    <p>
+      ご相談内容を受け付けました。<br>
+      <b style="color:var(--fg)">48時間以内</b>にメールでご返信します。
+    </p>
+    <p style="font-size:13px;color:var(--fg-subtle);margin-bottom:32px">
+      ※ 返信が届かない場合は、迷惑メールフォルダもご確認ください。
+    </p>
+    <a class="btn-primary" href="index.html">トップに戻る</a>
+  </div>
+</main>
+</body>
+</html>
