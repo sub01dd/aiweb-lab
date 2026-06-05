@@ -1,8 +1,8 @@
 /* TEAM */
-Founder: 〇〇〇〇
+Founder: 木野 蓮翔（Rento Kino）
 Role: Designer / Developer / 全部
 Location: Tokyo, Japan
-Contact: aiweb.lab.jp@gmail.com
+Contact: tai028780@gmail.com
 
 /* THANKS */
 Claude, Cursor, Figma, そして深夜のコンビニコーヒー。

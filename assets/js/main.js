@@ -119,7 +119,7 @@
         const ok = window.confirm('フォーム送信は準備中です。メールクライアントを開いて送信しますか？\n（OKでメール作成画面が開きます）');
         if (ok) {
           trackGA('generate_lead', { form_id: 'contact_mailto', value: 1 });
-          location.href = `mailto:aiweb.lab.jp@gmail.com?subject=${subject}&body=${body}`;
+          location.href = `mailto:tai028780@gmail.com?subject=${subject}&body=${body}`;
         }
         return;
       }

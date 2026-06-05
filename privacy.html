@@ -2,98 +2,233 @@
 <html lang="ja">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<meta name="robots" content="index,follow">
-<title>プライバシーポリシー | aiweb-lab</title>
-<meta name="description" content="aiweb-labのプライバシーポリシー。個人情報の取り扱いについて記載しています。">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="format-detection" content="telephone=no">
+<meta name="theme-color" content="#ffffff">
+
+<title>プライバシーポリシー｜aiweb-lab</title>
+<meta name="description" content="aiweb-lab（屋号）／代表 木野蓮翔。個人情報保護法に基づく、個人情報の取扱いに関するポリシー。">
+<meta name="robots" content="noindex,follow">
+<link rel="canonical" href="https://aiweb-lab.com/privacy.html">
+
+<link rel="icon" href="assets/img/favicon.ico" sizes="32x32">
+<link rel="icon" href="assets/img/icon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="assets/img/apple-touch-icon.png">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Shippori+Mincho:wght@500;700;800&display=swap">
 <link rel="stylesheet" href="assets/css/style.css">
+
+<!-- GA4 (本番ドメインでのみロード) -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+if(location.hostname==='aiweb-lab.com'){
+  const s=document.createElement('script');
+  s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KFF7C0B7F';
+  document.head.appendChild(s);
+  gtag('js',new Date());
+  gtag('config','G-5KFF7C0B7F',{anonymize_ip:true});
+}
+</script>
+
 <style>
-  .legal{padding:140px 0 96px}
-  .legal h1{font-size:clamp(28px,4vw,40px);margin-bottom:24px;letter-spacing:-.02em}
-  .legal .meta{color:var(--fg-subtle);font-size:13px;margin-bottom:40px;font-family:var(--ff-en)}
-  .legal h2{
-    font-size:20px;font-weight:700;margin:40px 0 16px;
-    padding-left:14px;border-left:3px solid;border-image:var(--grad) 1;
-  }
-  .legal p,.legal li{color:var(--fg-muted);font-size:14.5px;line-height:1.95}
-  .legal p{margin-bottom:14px}
-  .legal ul,.legal ol{padding-left:1.4em;margin-bottom:18px}
-  .legal li{margin-bottom:6px;list-style:disc}
-  .legal ol li{list-style:decimal}
-  .legal address{color:var(--fg);font-style:normal;line-height:1.9;font-size:14px}
+.legal{padding:96px 0 80px;background:var(--bg-1);min-height:100vh}
+.legal-wrap{max-width:880px;margin-inline:auto;padding-inline:clamp(20px,4vw,40px)}
+.legal-eyebrow{font-family:var(--ff-en);font-size:12px;letter-spacing:.2em;color:var(--vermilion);font-weight:700;text-transform:uppercase;margin-bottom:14px}
+.legal h1{font-family:var(--ff-display);font-size:clamp(28px,3.6vw,40px);font-weight:700;letter-spacing:.02em;color:var(--fg);margin-bottom:14px;line-height:1.35}
+.legal-lead{font-size:14.5px;color:var(--fg-muted);line-height:1.9;margin-bottom:48px;padding-bottom:24px;border-bottom:1px solid var(--border-subtle)}
+.legal-content{counter-reset:sec}
+.legal h2{font-family:var(--ff-display);font-size:20px;font-weight:700;color:var(--fg);margin:36px 0 14px;padding-left:14px;border-left:4px solid var(--vermilion);line-height:1.4;counter-increment:sec}
+.legal h2::before{content:counter(sec) ". ";color:var(--vermilion);margin-right:4px}
+.legal h3{font-family:var(--ff-jp);font-size:15.5px;font-weight:700;color:var(--fg);margin:20px 0 8px}
+.legal p{font-size:14.5px;line-height:1.95;color:var(--fg-muted);margin-bottom:14px}
+.legal ul,.legal ol{margin:10px 0 16px;padding-left:1.4em}
+.legal ul li,.legal ol li{font-size:14.5px;line-height:1.95;color:var(--fg-muted);margin-bottom:8px;list-style:disc}
+.legal ol li{list-style:decimal}
+.legal strong{color:var(--fg);font-weight:700}
+.legal a{color:var(--indigo);text-decoration:underline;text-underline-offset:3px}
+.legal a:hover{color:var(--vermilion)}
+.legal table{width:100%;border-collapse:collapse;margin:14px 0 20px;font-size:14px}
+.legal table th,.legal table td{border:1px solid var(--border-subtle);padding:12px 14px;text-align:left;vertical-align:top;line-height:1.7}
+.legal table th{background:var(--bg-3);font-weight:700;color:var(--fg)}
+.legal table td{background:var(--bg-2);color:var(--fg-muted)}
+.legal-foot{margin-top:48px;padding-top:24px;border-top:1px solid var(--border-subtle);font-size:13px;color:var(--fg-subtle);display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:14px}
+.legal-foot a{color:var(--indigo);font-weight:600}
+.legal-back{display:inline-flex;align-items:center;gap:6px;font-size:13.5px;color:var(--fg-muted);font-weight:600;margin-bottom:32px}
+.legal-back:hover{color:var(--vermilion)}
+.mini-hdr{background:var(--bg-0);border-bottom:1px solid var(--border-subtle);padding:14px 0}
+.mini-hdr-inner{max-width:var(--container);margin-inline:auto;padding-inline:clamp(20px,4vw,40px);display:flex;justify-content:space-between;align-items:center}
+.mini-hdr .brand{display:flex;align-items:center;gap:10px;color:var(--fg);font-family:var(--ff-en);font-weight:700;font-size:16px;letter-spacing:.02em}
+.mini-hdr .brand-mark{width:28px;height:28px;display:inline-flex;align-items:center;justify-content:center}
+.mini-hdr-link{font-size:13px;color:var(--fg-muted);font-weight:600}
+.mini-hdr-link:hover{color:var(--vermilion)}
+@media (max-width:600px){.legal{padding:72px 0 56px} .legal table th{width:42%}}
 </style>
 </head>
 <body>
-<header class="site-header" data-elevated="true">
-  <div class="container header-inner">
+
+<header class="mini-hdr">
+  <div class="mini-hdr-inner">
     <a href="index.html" class="brand">
-      <span class="brand-mark"><svg viewBox="0 0 32 32" width="28" height="28"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6ee7ff"/><stop offset="100%" stop-color="#a78bfa"/></linearGradient></defs><rect x="2" y="2" width="28" height="28" rx="8" fill="none" stroke="url(#lg)" stroke-width="2"/><path d="M10 22 L16 10 L22 22 M12.5 18 H19.5" stroke="url(#lg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span>
-      <span class="brand-text">aiweb-lab</span>
+      <span class="brand-mark" aria-hidden="true">
+        <svg viewBox="0 0 32 32" width="28" height="28"><defs><linearGradient id="lgP" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#b85450"/><stop offset="100%" stop-color="#2c4a6e"/></linearGradient></defs><rect x="2" y="2" width="28" height="28" rx="8" fill="none" stroke="url(#lgP)" stroke-width="2"/><path d="M10 22 L16 10 L22 22 M12.5 18 H19.5" stroke="url(#lgP)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg>
+      </span>
+      <span>aiweb-lab</span>
     </a>
-    <a href="index.html" class="btn-ghost" style="padding:8px 18px;font-size:13px">← トップへ戻る</a>
+    <a href="index.html" class="mini-hdr-link">← トップへ戻る</a>
   </div>
 </header>
+
 <main class="legal">
-  <div class="container narrow">
+  <div class="legal-wrap">
+
+    <a href="index.html" class="legal-back">← トップへ戻る</a>
+
+    <div class="legal-eyebrow">Legal</div>
     <h1>プライバシーポリシー</h1>
-    <p class="meta">最終更新日：2026年6月2日</p>
+    <p class="legal-lead">
+      aiweb-lab（以下「当方」といいます）は、当方が運営するウェブサイト（以下「当サイト」）における、ユーザーの個人情報の取扱いについて、以下のとおりプライバシーポリシー（以下「本ポリシー」）を定めます。本ポリシーは、個人情報の保護に関する法律（個人情報保護法）その他関連法令を遵守するために定めるものです。
+    </p>
 
-    <p>aiweb-lab（以下「当方」）は、お客様の個人情報の重要性を認識し、その保護を徹底することが社会的責務であると考え、以下の方針に基づき個人情報の保護に努めます。</p>
+    <div class="legal-content">
 
-    <h2>1. 個人情報の定義</h2>
-    <p>本ポリシーにおいて「個人情報」とは、個人情報の保護に関する法律（個人情報保護法）に定義される個人情報、すなわち氏名、メールアドレス等、特定の個人を識別できる情報を指します。</p>
+    <h2>事業者情報</h2>
+    <table>
+      <tbody>
+        <tr><th>屋号</th><td>aiweb-lab</td></tr>
+        <tr><th>代表者</th><td>木野 蓮翔（きの れんと）</td></tr>
+        <tr><th>所在地</th><td>東京都江東区（詳細な住所は、ご本人からのご請求があった場合に遅滞なく開示いたします）</td></tr>
+        <tr><th>お問い合わせ先</th><td><a href="mailto:tai028780@gmail.com">tai028780@gmail.com</a></td></tr>
+      </tbody>
+    </table>
 
-    <h2>2. 個人情報の取得</h2>
-    <p>当方は、お問い合わせフォーム、メール等を通じて、以下の情報を取得することがあります。</p>
+    <h2>取得する個人情報と取得方法</h2>
+
+    <h3>(1) お問い合わせフォームから取得する情報</h3>
     <ul>
       <li>氏名</li>
       <li>メールアドレス</li>
-      <li>業種・ご検討中のプラン</li>
-      <li>ご相談内容</li>
+      <li>業種（パーソナルジム／整体院／オンラインコーチ等）</li>
+      <li>ご検討中のプラン</li>
+      <li>お問い合わせ内容（自由入力欄に記載された情報）</li>
     </ul>
 
-    <h2>3. 利用目的</h2>
-    <p>取得した個人情報は、以下の目的のために利用します。</p>
-    <ol>
-      <li>お問い合わせへの返信・ご相談対応のため</li>
-      <li>サービスのご案内、お見積もり、契約締結・履行のため</li>
-      <li>サービス品質向上のための統計データの作成（個人を特定しない形式）</li>
-    </ol>
+    <h3>(2) メールから取得する情報</h3>
+    <ul>
+      <li>ユーザーが当方宛てにメールを送信した際の、メールアドレス・氏名・本文に含まれる情報</li>
+    </ul>
 
-    <h2>4. 第三者提供</h2>
-    <p>当方は、次のいずれかに該当する場合を除き、お客様の同意なく個人情報を第三者に提供しません。</p>
+    <h3>(3) 当サイト閲覧時に自動的に取得する情報（Cookie・アクセス解析）</h3>
+    <ul>
+      <li>IPアドレス、ブラウザ種別、参照元URL、閲覧ページ、滞在時間等のアクセスログ</li>
+      <li>Google Analytics 4 が発行するファーストパーティCookieを通じて収集される情報（個人を直接特定する情報は含まれません）</li>
+    </ul>
+
+    <h2>利用目的</h2>
+    <p>取得した個人情報は、以下の目的の範囲内でのみ利用します。</p>
+    <ol>
+      <li>お問い合わせ・ご相談への回答、見積書・提案書の送付のため</li>
+      <li>Web制作受託業務（LP・コーポレートサイト制作、月額保守等）の遂行のため</li>
+      <li>契約後の連絡、納品、請求、アフターサポートのため</li>
+      <li>当方サービスに関する情報・お知らせの送信のため（ご本人がご希望された場合に限ります）</li>
+      <li>当サイトの利用状況の分析、品質改善のため</li>
+      <li>法令に基づく対応、その他、上記の利用目的に付随する目的のため</li>
+    </ol>
+    <p>これらの利用目的の範囲を超えて個人情報を利用する場合は、事前にご本人の同意を得るものとします。</p>
+
+    <h2>個人情報の第三者提供</h2>
+    <p>当方は、以下の場合を除き、本人の同意なく個人情報を第三者に提供することはありません。</p>
     <ul>
       <li>法令に基づく場合</li>
-      <li>人の生命、身体または財産の保護のために必要がある場合</li>
-      <li>業務委託先に対し利用目的の達成に必要な範囲で提供する場合</li>
+      <li>人の生命・身体・財産の保護のために必要がある場合で、本人の同意を得ることが困難であるとき</li>
+      <li>公衆衛生の向上または児童の健全な育成の推進のために特に必要がある場合</li>
+      <li>国の機関等が法令の定める事務を遂行することへの協力が必要な場合</li>
     </ul>
 
-    <h2>5. 安全管理</h2>
-    <p>当方は、個人情報の漏えい、滅失または毀損の防止その他の個人情報の安全管理のため、必要かつ適切な措置を講じます。</p>
+    <h2>個人情報の取扱いの委託</h2>
+    <p>当方は、利用目的の達成に必要な範囲内で、個人情報の取扱いの全部または一部を以下の外部サービスに委託しております。委託先に対しては、適切な監督を行います。</p>
+    <table>
+      <thead>
+        <tr><th>委託先サービス</th><th>提供主体</th><th>委託する業務</th><th>データ保管国</th></tr>
+      </thead>
+      <tbody>
+        <tr><td>Formspree</td><td>Formspree, Inc.</td><td>お問い合わせフォーム送信内容の受信・転送</td><td>米国</td></tr>
+        <tr><td>Google Analytics 4</td><td>Google LLC</td><td>アクセス解析、利用状況分析</td><td>米国</td></tr>
+        <tr><td>Vercel</td><td>Vercel Inc.</td><td>当サイトのホスティング、配信、ログ保存</td><td>米国</td></tr>
+      </tbody>
+    </table>
 
-    <h2>6. Cookie・アクセス解析</h2>
-    <p>当サイトでは、サイトの利用状況を把握するため Google Analytics 4 を利用しています。Google Analytics はCookieを使用しますが、IP匿名化を有効にしており個人を特定する情報は取得しません。Cookieの利用を希望されない場合は、お使いのブラウザの設定で無効化できます。</p>
+    <h2>外国にある第三者への個人データの提供および外的環境の把握</h2>
+    <p>前項のとおり、お問い合わせフォーム送信内容・アクセスログ・Cookie情報は、米国に所在する事業者のサーバで取り扱われます。当方は、これらを「外的環境にある個人データの取扱い」として把握したうえで、安全管理措置を講じています。</p>
+    <ul>
+      <li><strong>提供先の所在国：</strong>米国（アメリカ合衆国）</li>
+      <li><strong>米国の個人情報保護制度に関する情報：</strong>米国には日本の個人情報保護法に相当する連邦レベルの包括的な個人情報保護法は存在せず、州法（例：カリフォルニア州消費者プライバシー法 CCPA／CPRA）および分野別の連邦法によって規律されています。<a href="https://www.ppc.go.jp/personalinfo/legal/kaiseihogohou/#gaikoku" target="_blank" rel="noopener">個人情報保護委員会が公表する「外国における個人情報の保護に関する制度等の調査」</a>も併せてご参照ください。</li>
+      <li><strong>提供先における保護措置：</strong>各委託先（Formspree／Google／Vercel）は、Standard Contractual Clauses（SCC）、EU-US Data Privacy Framework、SOC 2 等の国際的なセキュリティ枠組みに基づき、暗号化・アクセス制御・監査等の措置を講じています。</li>
+    </ul>
+    <p>なお、お問い合わせフォームをご送信いただく際は、上記の取扱いについて同意いただいたものとみなします。</p>
 
-    <h2>7. 開示・訂正・削除</h2>
-    <p>お客様ご本人から個人情報の開示、訂正、削除のご要望があった場合は、合理的な範囲で速やかに対応します。下記連絡先までご連絡ください。</p>
+    <h2>Cookie（クッキー）および類似技術の利用について</h2>
+    <p>当サイトでは、利用状況の分析および品質改善のため、Google Analytics 4 が発行するファーストパーティCookieを利用しています。これらのCookieにはユーザーを直接特定する情報は含まれませんが、利用を希望されない場合は、以下の方法で無効化できます。</p>
+    <ul>
+      <li>ブラウザの設定でCookieを無効化する</li>
+      <li><a href="https://tools.google.com/dlpage/gaoptout?hl=ja" target="_blank" rel="noopener">Google アナリティクス オプトアウト アドオン</a> をインストールする</li>
+    </ul>
+    <p>Google Analytics の利用規約およびプライバシーポリシーについては、以下をご参照ください。</p>
+    <ul>
+      <li><a href="https://policies.google.com/privacy?hl=ja" target="_blank" rel="noopener">Googleプライバシーポリシー</a></li>
+      <li><a href="https://marketingplatform.google.com/about/analytics/terms/jp/" target="_blank" rel="noopener">GA4 利用規約</a></li>
+    </ul>
 
-    <h2>8. ポリシーの改定</h2>
-    <p>本ポリシーは、法令の改正やサービス内容の変更に応じて、予告なく変更する場合があります。変更後の内容は本ページに掲載した時点から有効となります。</p>
+    <h2>安全管理措置</h2>
+    <p>当方は、個人情報の漏えい・滅失・毀損を防止するため、以下の安全管理措置を講じています。</p>
+    <ul>
+      <li><strong>基本方針の策定：</strong>本プライバシーポリシーの策定・公表</li>
+      <li><strong>取扱規律の整備：</strong>取得・利用・保管・委託・削除に関する取扱方法の明確化</li>
+      <li><strong>組織的安全管理措置：</strong>個人情報の取扱状況の点検</li>
+      <li><strong>人的安全管理措置：</strong>個人情報を取り扱う者（当方代表者）への定期的な自己研鑽</li>
+      <li><strong>物理的安全管理措置：</strong>個人情報を扱う端末の盗難・紛失防止策（端末ロック、機器の管理）</li>
+      <li><strong>技術的安全管理措置：</strong>端末のOS・ソフトウェアの最新化、ウイルス対策ソフトの導入、不要となった個人データの速やかな削除、通信のSSL/TLS暗号化</li>
+      <li><strong>外的環境の把握：</strong>第5項・第6項に記載のとおり、海外（米国）に所在するクラウドサービスを利用していることを把握し、必要な安全管理措置を講じています</li>
+    </ul>
+    <p>なお、安全管理措置の具体的内容については、本人からのご請求があった場合に、当方の判断により回答いたします。</p>
 
-    <h2>9. お問い合わせ窓口</h2>
-    <address>
-      屋号：aiweb-lab<br>
-      代表者：〇〇〇〇<br>
-      所在地：東京都〇〇区<br>
-      メール：<a href="mailto:aiweb.lab.jp@gmail.com" style="color:var(--cyan);text-decoration:underline">aiweb.lab.jp@gmail.com</a><br>
-      営業時間：24時間メール受付（返信は48時間以内）
-    </address>
+    <h2>保有個人データの開示・訂正・削除・利用停止等のご請求</h2>
+    <p>ご本人またはその代理人は、当方が保有する個人データについて、利用目的の通知、開示、内容の訂正・追加・削除、利用の停止、消去、第三者提供の停止等をご請求いただけます。</p>
+    <table>
+      <tbody>
+        <tr><th>受付窓口</th><td><a href="mailto:tai028780@gmail.com">tai028780@gmail.com</a></td></tr>
+        <tr><th>受付方法</th><td>メールによる受付。ご本人確認のため、追加情報の提供をお願いする場合があります。</td></tr>
+        <tr><th>手数料</th><td>無料</td></tr>
+        <tr><th>回答方法</th><td>原則としてメールにて、合理的な期間内に回答いたします。</td></tr>
+      </tbody>
+    </table>
+
+    <h2>お問い合わせ・苦情の受付窓口</h2>
+    <p>個人情報の取扱いに関するお問い合わせ・苦情のお申し出は、以下の窓口で受け付けます。</p>
+    <table>
+      <tbody>
+        <tr><th>屋号</th><td>aiweb-lab</td></tr>
+        <tr><th>担当者</th><td>木野 蓮翔</td></tr>
+        <tr><th>メール</th><td><a href="mailto:tai028780@gmail.com">tai028780@gmail.com</a></td></tr>
+      </tbody>
+    </table>
+
+    <h2>認定個人情報保護団体の対象事業者ではないことについて</h2>
+    <p>当方は、認定個人情報保護団体の対象事業者ではありません。</p>
+
+    <h2>プライバシーポリシーの改定</h2>
+    <p>当方は、法令の改正や事業内容の変更等に応じて、本ポリシーを随時改定することがあります。改定後の内容は、当サイトに掲載した時点から効力を生じるものとします。</p>
+
+    </div>
+
+    <div class="legal-foot">
+      <span>最終更新日：2026年6月5日</span>
+      <a href="index.html">← トップへ戻る</a>
+    </div>
+
   </div>
 </main>
-<footer class="site-footer">
-  <div class="container">
-    <p class="copyright">© 2026 aiweb-lab. All rights reserved.</p>
-  </div>
-</footer>
+
 </body>
 </html>

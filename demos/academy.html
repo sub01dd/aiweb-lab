@@ -1,0 +1,688 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex,follow">
+<title>【デモLP】SIGNAL｜マーケター実践講座＆サロン制作例 ─ aiweb-lab</title>
+<meta name="description" content="aiweb-lab 制作のデモLP。架空のマーケター向け実践講座＆サロン『SIGNAL』を題材とした制作例。掲載人物・実績はすべて架空です。">
+<link rel="canonical" href="https://aiweb-lab.com/demos/academy.html">
+
+<meta property="og:title" content="【デモLP】SIGNAL｜マーケター実践講座＆サロン制作例 ─ aiweb-lab">
+<meta property="og:description" content="aiweb-lab 制作のデモLP。架空のマーケター向け実践講座＆サロンを題材とした制作例。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://placehold.co/1200x630/ffffff/1d4ed8?text=SIGNAL">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800;900&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700;900&family=Inter:wght@600;700;800;900&display=swap"></noscript>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"【デモLP】SIGNAL - マーケター講座制作例","description":"aiweb-lab 制作のデモLP。","isPartOf":{"@type":"WebSite","name":"aiweb-lab","url":"https://aiweb-lab.com/"}}
+</script>
+
+<style>
+:root{
+  --c-red:#355a8c;
+  --c-red-d:#243f63;
+  --c-yellow:#c8d4dc;
+  --c-yellow-d:#a7b6c2;
+  --c-bg:#fbfaf7;
+  --c-bg-2:#f1efe8;
+  --c-bg-3:#ebe9e0;
+  --c-ink:#3a3a40;
+  --c-ink-2:#54545c;
+  --c-mute:#84848c;
+  --c-line:#d8d5cc;
+  --c-line-soft:#e8e5db;
+
+  --ff-en:"Inter",-apple-system,BlinkMacSystemFont,sans-serif;
+  --ff-ja:"Noto Sans JP","Inter","Hiragino Sans","ヒラギノ角ゴ ProN","Yu Gothic Bold",Meiryo,sans-serif;
+
+  --max:1200px;
+  --max-narrow:840px;
+  --pad:clamp(20px,4vw,40px);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+*{margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--c-bg);color:var(--c-ink-2);
+  font-family:var(--ff-ja);font-size:15px;line-height:1.8;
+  letter-spacing:.02em;font-feature-settings:"palt";
+  -webkit-font-smoothing:antialiased;
+  word-break:auto-phrase;line-break:strict;
+}
+h1,h2,h3,h4{text-wrap:balance}
+p,li,blockquote,dd{text-wrap:pretty}
+img,svg{display:block;max-width:100%;height:auto}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+h1,h2,h3,h4{font-family:var(--ff-ja);font-weight:900;color:var(--c-ink);line-height:1.35;letter-spacing:.02em;text-wrap:balance}
+::selection{background:var(--c-yellow);color:var(--c-ink)}
+
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--pad)}
+.br-pc{display:inline}.br-sp{display:none}
+@media (max-width:768px){.br-pc{display:none}.br-sp{display:inline}}
+
+/* demo banner */
+.demo-banner{position:sticky;top:0;z-index:60;background:var(--c-ink);color:var(--c-yellow);padding:8px var(--pad);font-size:12.5px;text-align:center;letter-spacing:.04em;font-weight:700}
+.demo-banner strong{color:var(--c-bg);margin-right:10px;font-weight:900}
+.demo-banner a{text-decoration:underline;text-underline-offset:3px;margin-left:10px;color:var(--c-bg)}
+
+/* top tape */
+.top-tape{background:var(--c-bg-2);color:var(--c-ink);text-align:center;padding:6px var(--pad);font-size:12px;font-weight:600;letter-spacing:.04em;border-bottom:1px solid var(--c-line)}
+.top-tape b{color:var(--c-red);margin-inline:6px;font-weight:700}
+
+/* header */
+.hdr{position:sticky;top:34px;z-index:50;background:var(--c-bg);border-bottom:1px solid var(--c-line)}
+.hdr-inner{display:flex;align-items:center;justify-content:space-between;height:64px;max-width:var(--max);margin-inline:auto;padding-inline:var(--pad)}
+.brand{display:flex;align-items:center;gap:10px;color:var(--c-ink)}
+.brand .mark{background:var(--c-red);color:var(--c-bg);font-family:var(--ff-en);font-weight:900;font-size:16px;letter-spacing:.06em;padding:5px 9px;border-radius:3px}
+.brand .name{font-family:var(--ff-ja);font-weight:900;font-size:20px;letter-spacing:.06em;color:var(--c-ink)}
+.brand .name small{display:block;font-size:10.5px;letter-spacing:.18em;font-weight:500;color:var(--c-mute);margin-top:1px}
+.nav-pc{display:flex;gap:24px;font-size:13.5px;letter-spacing:.04em;color:var(--c-ink);font-weight:700}
+.nav-pc a:hover{color:var(--c-red)}
+.hdr-cta{font-size:13.5px;letter-spacing:.04em;padding:11px 20px;background:var(--c-red);color:var(--c-bg);font-weight:700;border:1px solid var(--c-red);border-radius:4px;white-space:nowrap;line-height:1.2}
+.hdr-cta:hover{background:var(--c-red-d);border-color:var(--c-red-d)}
+.burger{display:none;width:38px;height:38px;position:relative;border:1px solid var(--c-line);background:var(--c-yellow);border-radius:4px}
+.burger span{position:absolute;left:8px;right:8px;height:2px;background:var(--c-ink)}
+.burger span:nth-child(1){top:11px}.burger span:nth-child(2){top:17px}.burger span:nth-child(3){top:23px}
+.burger.is-open span:nth-child(1){top:17px;transform:rotate(45deg)}
+.burger.is-open span:nth-child(2){opacity:0}
+.burger.is-open span:nth-child(3){top:17px;transform:rotate(-45deg)}
+@media (max-width:900px){.nav-pc,.hdr-cta{display:none} .burger{display:block}}
+
+/* drawer */
+.drawer{position:fixed;inset:0 0 0 auto;width:min(86%,340px);background:var(--c-bg);z-index:80;transform:translateX(100%);padding:72px 28px 32px;border-left:3px solid var(--c-ink)}
+.drawer.is-open{transform:translateX(0)}
+.drawer-bd{position:fixed;inset:0;background:rgba(10,10,10,.5);opacity:0;pointer-events:none;z-index:75}
+.drawer-bd.is-open{opacity:1;pointer-events:auto}
+.drawer ul{display:flex;flex-direction:column;gap:14px;margin-bottom:24px}
+.drawer ul a{font-family:var(--ff-ja);font-size:17px;letter-spacing:.04em;color:var(--c-ink);font-weight:900;padding:10px 0;border-bottom:1px solid var(--c-line)}
+.drawer-cta{display:block;text-align:center;background:var(--c-red);color:var(--c-bg);padding:14px;font-size:14px;border-radius:4px;font-weight:900;border:1px solid var(--c-line);white-space:nowrap;line-height:1.2}
+.drawer-close{position:absolute;top:18px;right:18px;width:36px;height:36px;font-size:24px;color:var(--c-mute)}
+
+/* chapter label */
+.chap{display:inline-block;background:var(--c-ink);color:var(--c-yellow);font-family:var(--ff-ja);font-size:11.5px;letter-spacing:.16em;font-weight:900;padding:5px 12px;margin-bottom:18px;border-radius:2px}
+.chap em{color:var(--c-bg);font-style:normal;margin-right:6px}
+
+h2.section-title{font-size:clamp(28px,4vw,46px);line-height:1.3;margin-bottom:20px;font-weight:900;letter-spacing:.01em}
+h2.section-title b{background:linear-gradient(transparent 62%,var(--c-yellow) 62%);padding:0 6px}
+.lede{font-size:15px;line-height:1.85;color:var(--c-ink-2);max-width:680px;font-weight:500}
+
+/* badge */
+.badge{display:inline-block;background:var(--c-yellow);color:var(--c-ink);font-family:var(--ff-ja);font-weight:900;font-size:12px;letter-spacing:.04em;padding:5px 12px;border:1px solid var(--c-line);border-radius:3px;transform:rotate(-2deg);box-shadow:3px 3px 0 var(--c-ink)}
+.badge-red{background:var(--c-red);color:var(--c-bg);border-color:var(--c-ink)}
+
+/* btn */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;font-size:14.5px;letter-spacing:.04em;font-weight:900;padding:16px 28px;border-radius:4px;border:1px solid var(--c-line);transition:transform .12s ease,background .12s ease;white-space:nowrap;line-height:1.2;text-align:center}
+.btn-primary{background:var(--c-red);color:var(--c-bg)}
+.btn-primary:hover{background:var(--c-red-d);transform:translate(-1px,-1px);box-shadow:3px 3px 0 var(--c-ink)}
+.btn-primary::after{content:"▶"}
+.btn-yellow{background:var(--c-yellow);color:var(--c-ink)}
+.btn-yellow:hover{background:var(--c-yellow-d);transform:translate(-1px,-1px);box-shadow:3px 3px 0 var(--c-ink)}
+.btn-yellow::after{content:"▶"}
+.btn-ghost{background:var(--c-bg);color:var(--c-ink)}
+.btn-ghost:hover{background:var(--c-ink);color:var(--c-bg)}
+
+/* FV */
+.fv{padding:48px 0 64px;background:var(--c-bg);border-bottom:1px solid var(--c-line);position:relative}
+.fv-grid{display:grid;grid-template-columns:minmax(0,720px);justify-content:center;gap:0;align-items:center;max-width:var(--max);margin-inline:auto;padding-inline:var(--pad)}
+.fv-badges{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:22px}
+.fv h1{font-family:var(--ff-ja);font-weight:900;font-size:clamp(28px,6vw,64px);line-height:1.25;letter-spacing:0;color:var(--c-ink);margin-bottom:24px;word-break:auto-phrase;text-wrap:balance}
+.fv h1 em{font-style:normal;color:var(--c-red)}
+.fv h1 b{background:linear-gradient(transparent 60%,var(--c-yellow) 60%);padding:0 6px;font-weight:900}
+.fv-sub{font-size:16px;line-height:1.9;color:var(--c-ink-2);margin-bottom:28px;max-width:540px;font-weight:500}
+.fv-meta{display:grid;grid-template-columns:repeat(3,1fr);border-top:3px solid var(--c-ink);border-bottom:1px solid var(--c-line);padding-block:16px;margin-bottom:28px;max-width:540px;background:var(--c-bg-2)}
+.fv-meta li{padding-inline:14px;border-right:1px solid var(--c-line);text-align:center}
+.fv-meta li:last-child{border-right:0}
+.fv-meta b{display:block;font-family:var(--ff-en);font-weight:900;font-size:32px;color:var(--c-red);letter-spacing:-.02em;line-height:1;font-variant-numeric:tabular-nums}
+.fv-meta b small{font-size:.5em;font-weight:800;color:var(--c-ink)}
+.fv-meta span{font-family:var(--ff-ja);font-size:10.5px;letter-spacing:.08em;color:var(--c-ink);font-weight:700;display:block;margin-top:6px}
+.fv-meta span i{display:block;font-style:normal;font-size:10px;letter-spacing:.04em;color:var(--c-mute);font-weight:500;margin-top:2px}
+.fv-cta{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+.fv-note{font-size:12.5px;color:var(--c-mute);letter-spacing:.04em;font-weight:500}
+.fv-note b{color:var(--c-red);font-weight:900}
+.fv-img{aspect-ratio:4/5;background:var(--c-bg-2);position:relative;overflow:hidden;border:1px solid var(--c-line);border-radius:6px}
+.fv-img img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.fv-img .stamp{position:absolute;top:18px;right:-8px;background:var(--c-red);color:var(--c-bg);font-family:var(--ff-ja);font-weight:900;font-size:13px;letter-spacing:.06em;padding:8px 16px;border:1px solid var(--c-line);transform:rotate(4deg);box-shadow:none;z-index:2}
+.fv-img .label{position:absolute;bottom:12px;left:12px;background:var(--c-yellow);color:var(--c-ink);font-family:var(--ff-ja);font-weight:900;font-size:11.5px;letter-spacing:.04em;padding:4px 10px;border:1.5px solid var(--c-ink);z-index:2}
+@media (max-width:900px){.fv{padding:32px 0 48px} .fv-grid{grid-template-columns:1fr;gap:32px} .fv h1{font-size:28px} .fv-meta li{padding-inline:8px} .fv-meta b{font-size:22px} .fv-meta span{font-size:9.5px;letter-spacing:.04em} .fv-meta span i{font-size:9px} .fv-cta{flex-direction:column;gap:12px} .fv-cta .btn{width:100%;padding:16px 20px;font-size:14px}}
+
+/* empathy */
+.empathy{padding:72px 0;background:var(--c-ink);color:var(--c-bg);border-bottom:1px solid var(--c-line)}
+.empathy h2{color:var(--c-bg)}
+.empathy .chap{background:var(--c-yellow);color:var(--c-ink)}
+.empathy .chap em{color:var(--c-red)}
+.empathy-inner{max-width:var(--max-narrow);margin-inline:auto;padding-inline:var(--pad)}
+.empathy h2{font-size:clamp(26px,3.4vw,38px);margin-bottom:32px;font-weight:900;letter-spacing:.01em;line-height:1.35}
+.empathy h2 em{font-style:normal;color:var(--c-yellow)}
+.empathy-list{border-top:2px solid #2a2a2a}
+.empathy-list li{display:flex;gap:20px;padding:18px 0;border-bottom:2px solid #2a2a2a;align-items:flex-start}
+.empathy-list li b{background:var(--c-red);color:var(--c-bg);font-family:var(--ff-ja);font-weight:900;font-size:13px;padding:5px 10px;border-radius:3px;flex-shrink:0;letter-spacing:.04em;width:auto;min-width:36px;text-align:center}
+.empathy-list li p{font-family:var(--ff-ja);font-size:16px;line-height:1.75;color:var(--c-bg);font-weight:700}
+@media (max-width:768px){.empathy{padding:56px 0}}
+
+/* story */
+.story{padding:80px 0;border-bottom:1px solid var(--c-line)}
+.story-grid{display:grid;grid-template-columns:1fr;gap:0;max-width:var(--max-narrow);margin-inline:auto;padding-inline:var(--pad);align-items:start}
+.story-portrait{aspect-ratio:4/5;background:var(--c-bg-3);position:relative;border:1px solid var(--c-line);border-radius:6px;overflow:hidden}
+.story-portrait img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.story-portrait .label{position:absolute;bottom:12px;left:12px;background:var(--c-yellow);color:var(--c-ink);font-family:var(--ff-ja);font-weight:900;font-size:11.5px;padding:4px 10px;border:1.5px solid var(--c-ink);z-index:2}
+.story-body .lead-p{font-family:var(--ff-ja);font-size:18px;line-height:1.8;font-weight:900;color:var(--c-ink);margin-bottom:20px}
+.story-body p{margin-bottom:1.1em;font-size:15px;line-height:1.9;color:var(--c-ink-2);font-weight:500}
+.story-body blockquote{font-family:var(--ff-ja);font-weight:900;font-size:18px;line-height:1.7;color:var(--c-ink);background:var(--c-yellow);padding:16px 22px;border:1px solid var(--c-line);margin:22px 0;border-left-width:8px}
+.story-sign{margin-top:20px;font-size:12.5px;color:var(--c-mute);font-weight:500}
+.story-sign b{font-family:var(--ff-ja);color:var(--c-ink);font-weight:900;font-size:16px;display:block;margin-top:4px}
+@media (max-width:900px){.story{padding:56px 0} .story-grid{grid-template-columns:1fr;gap:28px}}
+
+/* method */
+.method{padding:80px 0;background:var(--c-bg-2);border-bottom:1px solid var(--c-line)}
+.method-head{max-width:var(--max-narrow);margin-inline:auto;padding-inline:var(--pad);margin-bottom:40px}
+.method-steps{max-width:var(--max);margin-inline:auto;padding-inline:var(--pad);display:grid;gap:14px}
+.method-step{display:grid;grid-template-columns:90px 1fr 1.3fr;gap:28px;padding:24px 26px;background:var(--c-bg);border:1px solid var(--c-line);border-radius:6px;align-items:start;box-shadow:none}
+.method-step .no{background:var(--c-red);color:var(--c-bg);font-family:var(--ff-en);font-weight:900;font-size:24px;text-align:center;padding:18px 0;border-radius:4px;letter-spacing:-.01em;line-height:1}
+.method-step .no small{display:block;font-family:var(--ff-ja);font-size:10px;font-weight:700;margin-top:4px;letter-spacing:.08em;color:var(--c-yellow)}
+.method-step h3{font-family:var(--ff-ja);font-size:22px;font-weight:900;line-height:1.4;color:var(--c-ink);letter-spacing:0}
+.method-step h3 small{display:block;font-family:var(--ff-en);font-size:12px;letter-spacing:.06em;color:var(--c-red);font-weight:700;margin-top:6px;text-transform:uppercase}
+.method-step p{font-size:14.5px;line-height:1.85;color:var(--c-ink-2);font-weight:500}
+@media (max-width:900px){.method-step{grid-template-columns:1fr;gap:14px} .method-step .no{padding:14px} .method{padding:56px 0}}
+
+/* bridge */
+.bridge{padding:80px 0;border-bottom:1px solid var(--c-line)}
+.bridge-head{max-width:var(--max-narrow);margin-inline:auto;padding-inline:var(--pad);margin-bottom:40px}
+.bridge-wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--pad)}
+.bridge-timeline{display:grid;grid-template-columns:1fr 1fr 1fr;gap:14px}
+.bridge-phase{background:var(--c-bg);border:1px solid var(--c-line);border-radius:6px;padding:22px 22px;position:relative;box-shadow:none}
+.bridge-phase .when{background:var(--c-ink);color:var(--c-yellow);font-family:var(--ff-ja);font-weight:900;font-size:11px;letter-spacing:.08em;padding:4px 10px;margin-bottom:14px;display:inline-block;border-radius:2px}
+.bridge-phase h3{font-family:var(--ff-ja);font-size:20px;font-weight:900;color:var(--c-ink);line-height:1.4;margin-bottom:12px}
+.bridge-phase p{font-size:14px;line-height:1.8;color:var(--c-ink-2);font-weight:500}
+.bridge-phase ul{margin-top:12px;font-size:13px;color:var(--c-ink-2);line-height:1.9;font-weight:600}
+.bridge-phase ul li{padding-left:18px;position:relative}
+.bridge-phase ul li::before{content:"●";position:absolute;left:0;color:var(--c-red);font-size:10px;top:7px}
+.bridge-phase.is-mid{background:var(--c-bg-2)}
+.bridge-phase.is-mid .when{background:var(--c-red);color:var(--c-bg)}
+.bridge-phase.is-end .when{background:var(--c-yellow);color:var(--c-ink)}
+@media (max-width:900px){.bridge{padding:56px 0} .bridge-timeline{grid-template-columns:1fr;gap:12px}}
+
+/* voices */
+.voices{padding:80px 0;background:var(--c-bg-3);border-bottom:1px solid var(--c-line)}
+.voices-head{max-width:var(--max-narrow);margin-inline:auto;padding-inline:var(--pad);margin-bottom:40px}
+.voices-list{max-width:var(--max);margin-inline:auto;padding-inline:var(--pad);display:grid;gap:20px}
+.voice{display:block;background:var(--c-bg);border:1px solid var(--c-line);padding:28px 32px;border-radius:6px;box-shadow:none}
+.voice-photo{aspect-ratio:4/5;background:var(--c-bg-2);position:relative;border:1px solid var(--c-line);border-radius:4px;overflow:hidden}
+.voice-photo img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.voice-photo .label{position:absolute;bottom:10px;left:10px;background:var(--c-yellow);color:var(--c-ink);font-family:var(--ff-ja);font-weight:900;font-size:10.5px;padding:3px 8px;border:1.5px solid var(--c-ink);z-index:2}
+.voice-meta{background:var(--c-red);color:var(--c-bg);font-family:var(--ff-ja);font-weight:900;font-size:11px;letter-spacing:.1em;padding:4px 10px;margin-bottom:14px;display:inline-block;border-radius:2px}
+.voice h3{font-family:var(--ff-ja);font-size:20px;font-weight:900;line-height:1.5;color:var(--c-ink);margin-bottom:14px}
+.voice h3 b{background:linear-gradient(transparent 62%,var(--c-yellow) 62%);padding:0 4px}
+.voice p{font-size:14.5px;line-height:1.85;color:var(--c-ink-2);margin-bottom:10px;font-weight:500}
+.voice .who{margin-top:14px;font-size:12.5px;color:var(--c-mute);border-top:2px dashed var(--c-line);padding-top:12px;font-weight:600}
+.voice .who b{font-family:var(--ff-ja);color:var(--c-ink);font-weight:900;margin-right:10px}
+.voice .disclaimer{margin-top:4px;font-size:11px;color:var(--c-mute);line-height:1.6;font-weight:500}
+@media (max-width:900px){.voices{padding:56px 0} .voice{grid-template-columns:1fr;gap:16px} .voice-photo{max-width:200px}}
+
+/* not for you */
+.notforyou{padding:72px 0;border-bottom:1px solid var(--c-line)}
+.notforyou-wrap{max-width:var(--max-narrow);margin-inline:auto;padding-inline:var(--pad)}
+.notforyou h2{font-size:clamp(24px,3.2vw,34px);font-weight:900;line-height:1.4;margin-bottom:28px}
+.notforyou-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.notforyou-col{background:var(--c-bg);border:1px solid var(--c-line);border-radius:6px;padding:24px;box-shadow:none}
+.notforyou-col.fit{background:var(--c-bg-2)}
+.notforyou-col h4{font-family:var(--ff-ja);font-size:14px;font-weight:900;color:var(--c-ink);margin-bottom:14px;padding-bottom:10px;border-bottom:2px solid var(--c-ink);letter-spacing:.02em}
+.notforyou-col.fit h4{color:var(--c-red)}
+.notforyou-col h4 em{font-style:normal;font-family:var(--ff-en);font-weight:900;margin-right:8px;font-size:18px}
+.notforyou-col ul li{padding:10px 0;border-bottom:1px solid var(--c-line-soft);font-size:14px;line-height:1.7;color:var(--c-ink-2);font-weight:500;padding-left:22px;position:relative}
+.notforyou-col.fit ul li::before{content:"◯";color:var(--c-red);position:absolute;left:0;font-weight:900;font-size:13px;top:11px}
+.notforyou-col:not(.fit) ul li::before{content:"×";color:var(--c-mute);position:absolute;left:2px;font-weight:900;font-size:15px;top:9px}
+@media (max-width:768px){.notforyou{padding:56px 0} .notforyou-grid{grid-template-columns:1fr;gap:14px}}
+
+/* price */
+.price{padding:80px 0;background:var(--c-bg-2);border-bottom:1px solid var(--c-line)}
+.price-head{max-width:var(--max-narrow);margin-inline:auto;padding-inline:var(--pad);margin-bottom:32px}
+.price-grid{max-width:var(--max);margin-inline:auto;padding-inline:var(--pad);display:grid;grid-template-columns:1.15fr .85fr;gap:18px;align-items:stretch}
+.price-card{background:var(--c-bg);border:1px solid var(--c-line);padding:32px 28px;display:flex;flex-direction:column;position:relative;border-radius:6px;box-shadow:none}
+.price-card.is-main{border-color:var(--c-red)}
+.price-card.is-main::before{content:"本講座";position:absolute;top:-16px;left:18px;background:var(--c-red);color:var(--c-bg);font-family:var(--ff-ja);font-weight:900;font-size:13px;padding:5px 14px;border:1px solid var(--c-line);letter-spacing:.08em}
+.price-card.is-sub::before{content:"継続サロン";position:absolute;top:-16px;left:18px;background:var(--c-ink);color:var(--c-yellow);font-family:var(--ff-ja);font-weight:900;font-size:13px;padding:5px 14px;border:1px solid var(--c-line);letter-spacing:.08em}
+.price-card h3{font-family:var(--ff-ja);font-size:24px;font-weight:900;line-height:1.4;color:var(--c-ink);margin-top:8px;margin-bottom:8px}
+.price-card .duration{font-size:12.5px;color:var(--c-mute);margin-bottom:20px;padding-bottom:16px;border-bottom:2px dashed var(--c-line);font-weight:600}
+.price-amount{display:flex;align-items:baseline;gap:6px;margin-bottom:6px}
+.price-amount b{font-family:var(--ff-en);font-weight:900;font-size:56px;color:var(--c-red);letter-spacing:-.03em;line-height:1;font-variant-numeric:tabular-nums}
+.price-amount small{font-family:var(--ff-ja);font-size:13px;color:var(--c-ink);font-weight:700}
+.price-monthly{font-size:13.5px;color:var(--c-ink-2);margin-bottom:18px;font-weight:600;background:var(--c-yellow);padding:6px 12px;border:1px solid var(--c-line);display:inline-block;border-radius:3px}
+.price-monthly b{color:var(--c-red);font-weight:900;font-family:var(--ff-en);font-size:18px;font-variant-numeric:tabular-nums;margin-inline:2px}
+.price-card ul{flex:1;margin-bottom:22px;margin-top:6px}
+.price-card ul li{padding:9px 0;border-bottom:1px solid var(--c-line-soft);font-size:13.5px;color:var(--c-ink-2);line-height:1.55;padding-left:22px;position:relative;font-weight:600}
+.price-card ul li::before{content:"◯";position:absolute;left:0;color:var(--c-red);font-weight:900;font-size:12px;top:11px}
+.price-card .btn{margin-top:auto;font-size:14px}
+.price-card.is-sub .btn{background:var(--c-bg);color:var(--c-ink)}
+.price-card.is-sub .btn:hover{background:var(--c-ink);color:var(--c-bg)}
+.price-guards{max-width:var(--max);margin:24px auto 0;padding-inline:var(--pad);display:grid;grid-template-columns:repeat(3,1fr);gap:12px}
+.price-guard{background:var(--c-bg);border:1px solid var(--c-line);padding:14px 16px;border-radius:6px;display:flex;align-items:center;gap:12px}
+.price-guard .gmark{background:var(--c-red);color:var(--c-bg);width:42px;height:42px;display:flex;align-items:center;justify-content:center;font-family:var(--ff-ja);font-weight:900;font-size:18px;border-radius:50%;flex-shrink:0;border:1px solid var(--c-line)}
+.price-guard b{font-family:var(--ff-ja);font-size:13.5px;font-weight:900;color:var(--c-ink);display:block;line-height:1.3}
+.price-guard p{font-size:11.5px;color:var(--c-mute);line-height:1.5;margin-top:3px;font-weight:500}
+@media (max-width:900px){.price{padding:56px 0} .price-grid{grid-template-columns:1fr;gap:24px} .price-amount b{font-size:44px} .price-card .btn{width:100%} .price-guards{grid-template-columns:1fr;gap:10px;margin-top:18px}}
+
+/* faq */
+.faq{padding:80px 0;border-bottom:1px solid var(--c-line)}
+.faq-head{max-width:var(--max-narrow);margin-inline:auto;padding-inline:var(--pad);margin-bottom:28px}
+.faq-list{max-width:var(--max-narrow);margin-inline:auto;padding-inline:var(--pad);display:grid;gap:10px}
+.faq-item{background:var(--c-bg);border:1px solid var(--c-line);border-radius:6px;overflow:hidden}
+.faq-q{display:flex;align-items:flex-start;gap:14px;width:100%;text-align:left;padding:18px 20px;cursor:pointer;font-family:var(--ff-ja);font-size:15.5px;font-weight:900;color:var(--c-ink);line-height:1.5;background:var(--c-bg)}
+.faq-q:hover{background:var(--c-bg-2)}
+.faq-q .qmark{background:var(--c-red);color:var(--c-bg);font-family:var(--ff-en);font-weight:900;font-size:13px;padding:3px 8px;border-radius:3px;flex-shrink:0;letter-spacing:.04em}
+.faq-q .qtext{flex:1}
+.faq-q .arrow{flex-shrink:0;width:20px;height:20px;position:relative;margin-top:6px;color:var(--c-ink)}
+.faq-q .arrow::before,.faq-q .arrow::after{content:"";position:absolute;background:currentColor}
+.faq-q .arrow::before{top:9.5px;left:0;width:20px;height:2px}
+.faq-q .arrow::after{top:0;left:9px;width:2px;height:20px}
+.faq-item.is-open .faq-q{background:var(--c-yellow)}
+.faq-item.is-open .faq-q .arrow::after{display:none}
+.faq-a{display:none}
+.faq-item.is-open .faq-a{display:block}
+.faq-a-inner{padding:16px 20px 20px 56px;font-size:14px;line-height:1.85;color:var(--c-ink-2);font-weight:500;border-top:2px dashed var(--c-line);background:var(--c-bg)}
+@media (max-width:768px){.faq{padding:56px 0} .faq-a-inner{padding-left:24px}}
+
+/* final */
+.final{padding:88px 0;background:var(--c-ink);color:var(--c-bg);position:relative;overflow:hidden}
+.final::before{content:"";position:absolute;top:0;left:0;right:0;height:6px;background:var(--c-red)}
+.final::after{content:"";position:absolute;bottom:0;left:0;right:0;height:6px;background:var(--c-red)}
+.final-wrap{max-width:var(--max-narrow);margin-inline:auto;padding-inline:var(--pad);text-align:center;position:relative;z-index:1}
+.final-badges{display:flex;gap:10px;justify-content:center;margin-bottom:20px;flex-wrap:wrap}
+.final-badges .badge{background:var(--c-yellow);transform:rotate(-3deg)}
+.final-badges .badge:nth-child(2){transform:rotate(2deg)}
+.final h2{font-family:var(--ff-ja);font-size:clamp(28px,4vw,46px);font-weight:900;line-height:1.3;color:var(--c-bg);letter-spacing:.01em;margin-bottom:18px}
+.final h2 b{background:var(--c-yellow);color:var(--c-ink);padding:2px 10px}
+.final p{font-size:15px;line-height:1.85;color:#bcbcc4;margin-bottom:30px;max-width:520px;margin-inline:auto;font-weight:500}
+.final .btn-yellow{padding:20px 40px;font-size:15px;background:var(--c-bg);color:var(--c-ink);border-color:var(--c-bg)}
+.final .btn-yellow:hover{background:var(--c-red);color:var(--c-bg);border-color:var(--c-red)}
+.final-foot{margin-top:22px;font-size:12.5px;color:#8e8e95;font-weight:500}
+.final-foot b{color:var(--c-bg);font-weight:700;margin-inline:4px}
+@media (max-width:768px){.final{padding:60px 0} .final .btn-yellow{padding:18px 24px;font-size:14px;max-width:100%;width:100%}}
+
+/* footer */
+footer{background:var(--c-ink);color:var(--c-bg);padding:56px 0 28px}
+.foot-wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--pad)}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;margin-bottom:36px}
+.foot-brand{display:flex;align-items:center;gap:10px}
+.foot-brand .mark{background:var(--c-yellow);color:var(--c-ink);font-family:var(--ff-en);font-weight:900;font-size:15px;padding:5px 9px;border-radius:3px}
+.foot-brand .name{font-family:var(--ff-ja);font-weight:900;font-size:18px;color:var(--c-bg)}
+.foot-tagline{font-size:12.5px;color:#a0a0a0;line-height:1.85;margin-top:12px;max-width:280px;font-weight:500}
+.foot-col h5{font-family:var(--ff-ja);font-size:12px;letter-spacing:.06em;color:var(--c-yellow);font-weight:900;margin-bottom:12px}
+.foot-col li{margin-bottom:9px}
+.foot-col a{font-size:13px;color:var(--c-bg);font-weight:500}
+.foot-col a:hover{color:var(--c-yellow)}
+.foot-disclaimer{padding-top:22px;border-top:1px solid #2a2a2a;font-size:11.5px;color:#a0a0a0;line-height:1.85}
+.foot-disclaimer strong{color:var(--c-yellow);font-weight:900}
+.foot-disclaimer a{text-decoration:underline;text-underline-offset:3px;color:var(--c-bg)}
+.foot-copy{margin-top:20px;display:flex;justify-content:space-between;align-items:baseline;font-size:11px;color:#888;font-weight:500}
+@media (max-width:900px){.foot-grid{grid-template-columns:1fr 1fr;gap:24px} .foot-copy{flex-direction:column;gap:10px;align-items:flex-start}}
+
+/* mobile cta */
+.mobile-cta{display:none;position:fixed;left:0;right:0;bottom:0;z-index:55;background:var(--c-bg);border-top:3px solid var(--c-ink);padding:10px 12px;gap:8px}
+.mobile-cta a{flex:1;text-align:center;padding:13px 8px;font-size:12.5px;letter-spacing:.02em;border-radius:4px;font-weight:900;border:1px solid var(--c-line);white-space:nowrap;line-height:1.2;min-width:0;overflow:hidden;text-overflow:ellipsis}
+.mobile-cta .a1{background:var(--c-yellow);color:var(--c-ink)}
+.mobile-cta .a2{background:var(--c-red);color:var(--c-bg)}
+@media (max-width:900px){.mobile-cta{display:flex} body{padding-bottom:72px}}
+</style>
+
+<!-- GA4 (本番ドメインでのみロード) -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+if(location.hostname==='aiweb-lab.com'){
+  const s=document.createElement('script');
+  s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KFF7C0B7F';
+  document.head.appendChild(s);
+  gtag('js',new Date());
+  gtag('config','G-5KFF7C0B7F',{anonymize_ip:true});
+}
+</script>
+</head>
+<body>
+
+<div class="demo-banner" role="alert">
+  <strong>これはデモLPです</strong>『SIGNAL』は架空のクライアントです<a href="../index.html">aiweb-lab で制作</a>
+</div>
+
+<div class="top-tape">
+  Cohort 16 ／ 募集 〜<b>3/20</b> ／ 無料説明会 <b>残り3枠</b>
+</div>
+
+<header class="hdr">
+  <div class="hdr-inner">
+    <a href="#" class="brand">
+      <span class="mark">SIG</span>
+      <span class="name">SIGNAL<small>マーケター実践講座＆サロン</small></span>
+    </a>
+    <nav class="nav-pc">
+      <a href="#story">主宰</a>
+      <a href="#method">講座</a>
+      <a href="#bridge">サロン</a>
+      <a href="#voices">受講生</a>
+      <a href="#price">料金</a>
+      <a href="#faq">Q&amp;A</a>
+    </nav>
+    <a href="#final" class="hdr-cta">無料説明会を予約</a>
+    <button class="burger" id="burger" aria-label="メニュー"><span></span><span></span><span></span></button>
+  </div>
+</header>
+
+<div class="drawer-bd" id="drawer-bd"></div>
+<aside class="drawer" id="drawer" aria-hidden="true">
+  <button class="drawer-close" id="drawer-close" aria-label="閉じる">×</button>
+  <ul>
+    <li><a href="#story">主宰について</a></li>
+    <li><a href="#method">講座の進め方</a></li>
+    <li><a href="#bridge">サロンについて</a></li>
+    <li><a href="#voices">受講生の声</a></li>
+    <li><a href="#price">料金</a></li>
+    <li><a href="#faq">よくある質問</a></li>
+  </ul>
+  <a href="#final" class="drawer-cta">無料説明会を予約</a>
+</aside>
+
+<section class="fv">
+  <div class="fv-grid">
+    <div>
+      <div class="fv-badges">
+        <span class="badge">Cohort 16 募集中</span>
+        <span class="badge badge-red">早割あり</span>
+      </div>
+      <h1>
+        ノイズの中に、<br>
+        <em>シグナル</em>は<b>ある</b>。
+      </h1>
+      <p class="fv-sub">B2B SaaS とDTCの<strong>マーケター・グロース担当</strong>のための、6ヶ月のコホート型講座と、修了後に続く<strong>月額サロン</strong>。</p>
+      <ul class="fv-meta">
+        <li><b>187<small>名</small></b><span>Cohort Graduates<i>累計修了生</i></span></li>
+        <li><b>72<small>%</small></b><span>Salon Retention<i>修了後の継続率</i></span></li>
+        <li><b>6<small>mo</small></b><span>Program Length<i>講座期間</i></span></li>
+      </ul>
+      <div class="fv-cta">
+        <a href="#final" class="btn btn-primary">無料説明会を予約する</a>
+        <a href="#price" class="btn btn-ghost">料金を見る</a>
+      </div>
+      <p class="fv-note">次回 <b>12月◯日（土）10:00</b>／90分・Zoom／参加費無料</p>
+    </div>
+  </div>
+</section>
+
+<section class="empathy">
+  <div class="wrap empathy-inner">
+    <span class="chap"><em>01</em>次に直面しがちな3つの状況</span>
+    <h2>次の打ち手、<em>ひとり</em>で抱えていませんか？</h2>
+    <ol class="empathy-list">
+      <li><b>01</b><p>次の打ち手を、レビュー相手なしで決め続けて消耗している。</p></li>
+      <li><b>02</b><p>数字は伸びている。でも、何が効いているか説明できない。</p></li>
+      <li><b>03</b><p>相談相手が、結局いない。代理店にも上司にも、踏み込んで言えない話がある。</p></li>
+    </ol>
+  </div>
+</section>
+
+<section class="story" id="story">
+  <div class="story-grid">
+    <div class="story-body">
+      <span class="chap"><em>02</em>主宰について</span>
+      <p class="lead-p">SIGNAL の主宰、桐山です。</p>
+      <p>10年、B2B SaaS とDTCブランドのグロースを担当しました。最後の3年は、月次ARRを4倍に伸ばすチームを率い、独立したのが2022年です。</p>
+      <blockquote>数字を伸ばすより、何が効いたかを言語化するほうが、ずっと難しい。</blockquote>
+      <p>SIGNAL は、その経験から始めた場所です。新しい施策を覚える講座ではなく、自分の事業のデータから「次に賭けるシグナル」を取り出す訓練を、6ヶ月かけてやります。</p>
+      <div class="story-sign">
+        元グロースリード／ex-Growth Lead
+        <b>桐山&nbsp;慎也（きりやま&nbsp;しんや）</b>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="method" id="method">
+  <div class="method-head">
+    <span class="chap"><em>03</em>講座の進め方</span>
+    <h2 class="section-title">SIGNAL 式、<b>3つのフェーズ</b>。</h2>
+    <p class="lede">施策を増やす前に、シグナルを取り出す。2ヶ月で観測、2ヶ月で設計、2ヶ月で実装まで。</p>
+  </div>
+  <div class="method-steps">
+    <article class="method-step">
+      <div class="no">01<small>OBSERVE</small></div>
+      <h3>観測<small>Detect — Month 1-2</small></h3>
+      <p>自分の事業のファネル・コホート・LTV/CACを棚卸し。GA4／Mixpanel／SQLからでも、Notion／スプシからでも、生データを North Star に紐づける2ヶ月。</p>
+    </article>
+    <article class="method-step">
+      <div class="no">02<small>DESIGN</small></div>
+      <h3>設計<small>Hypothesize — Month 3-4</small></h3>
+      <p>次に賭ける仮説を、ICE／RICEで優先度づけ。月2回の1on1で、自分の事業のKPIツリーを主宰と一緒に組み直す。</p>
+    </article>
+    <article class="method-step">
+      <div class="no">03<small>SHIP</small></div>
+      <h3>実装<small>Ship &amp; Iterate — Month 5-6</small></h3>
+      <p>90日のロードマップに落とし、A/Bテストか段階リリースで回す。撤退条件と相談先まで含めて、現場で動くかたちに。</p>
+    </article>
+  </div>
+</section>
+
+<section class="bridge" id="bridge">
+  <div class="bridge-head">
+    <span class="chap"><em>04</em>修了後について</span>
+    <h2 class="section-title">講座は終わる。<br>でも、<b>事業は続く</b>。</h2>
+    <p class="lede">修了生だけが入れる、月額のオペレーターズ・サロン。72%が継続中（自社実績／n=187／2024年集計）。</p>
+  </div>
+  <div class="bridge-wrap">
+    <div class="bridge-timeline">
+      <div class="bridge-phase">
+        <span class="when">Phase 01 ／ Month 1-6</span>
+        <h3>本講座</h3>
+        <p>毎週の動画とワーク、月2回の1on1、Slack質疑、修了デモデイ。</p>
+        <ul><li>動画レッスン 24本</li><li>1on1セッション 8回</li><li>Slack質問 無制限</li><li>修了デモデイ 90分</li></ul>
+      </div>
+      <div class="bridge-phase is-mid">
+        <span class="when">Pause ／ Month 7</span>
+        <h3>観察月</h3>
+        <p>修了後の1ヶ月、新しい打ち手を意図的に止め、走らせた実験のデータが返ってくるのを見る月。</p>
+        <ul><li>連絡なし</li><li>アーカイブ視聴可</li><li>次月案内のみ</li></ul>
+      </div>
+      <div class="bridge-phase is-end">
+        <span class="when">Phase 02 ／ Month 8 ~</span>
+        <h3>継続サロン</h3>
+        <p>続けたい方だけ。月1の事例共有会、Slackで実験ログ、年1の合宿。</p>
+        <ul><li>月額 ¥9,800</li><li>月1・事例共有会</li><li>Slack 通年</li><li>いつでも退会できます</li></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="voices" id="voices">
+  <div class="voices-head">
+    <span class="chap"><em>05</em>受講生の声</span>
+    <h2 class="section-title">受講した、<b>2人の話</b>。</h2>
+  </div>
+  <div class="voices-list">
+    <article class="voice">
+      <div>
+        <span class="voice-meta">受講生の声 No.01</span>
+        <h3>「ARRは<b>1.8倍</b>。でも、効いたのは新規施策ではなかった。」</h3>
+        <p>B2B SaaSのグロース担当2年目。新規流入のチャネル開拓ばかり考えていた。3ヶ月目のコホート分析で、解約の理由がオンボーディングの初週にあると気づいた。施策を増やすのをやめて、初週のチェックインを設計し直した。それで効いた。</p>
+        <div class="who"><b>K.M. さん</b>34歳・B2B SaaS Growth／Cohort 12</div>
+        <p class="disclaimer">※受講生個人の感想であり、成果には個人差があります。</p>
+      </div>
+    </article>
+    <article class="voice">
+      <div>
+        <span class="voice-meta">受講生の声 No.02</span>
+        <h3>「独立を<b>1年延期する</b>、と数字で説明できるようになった。」</h3>
+        <p>DTCブランドのマーケ責任者、副業でEC事業を運営中。受講前は「来春独立」しか考えていなかった。5ヶ月目のKPIツリーで、独立後の収支に1年分の助走が必要だと自分で気づいた。延期は後退ではなく、シグナルを読んだ結果でした。</p>
+        <div class="who"><b>N.S. さん</b>35歳・DTC Marketing／Cohort 11</div>
+        <p class="disclaimer">※受講生個人の感想であり、成果には個人差があります。</p>
+      </div>
+    </article>
+  </div>
+</section>
+
+<section class="price" id="price">
+  <div class="price-head">
+    <span class="chap"><em>06</em>料金</span>
+    <h2 class="section-title"><b>本講座</b>と、修了後の<b>サロン</b>。</h2>
+    <p class="lede">本講座（6ヶ月／一括）と、修了生限定サロン（月額／任意）の2段構え。</p>
+  </div>
+  <div class="price-grid">
+    <article class="price-card is-main">
+      <h3>本講座（Cohort 16 ／ 6ヶ月）</h3>
+      <p class="duration">2027年 春期 ／ 4月開講・募集 〜3月20日</p>
+      <div class="price-amount"><b>¥398,000</b><small>税込・一括</small></div>
+      <p class="price-monthly">分割払い 月々 <b>¥33,167</b>〜（Stripe・12回）</p>
+      <ul>
+        <li>動画レッスン 全24本（無期限視聴）</li>
+        <li>1on1セッション 全8回（各60分）</li>
+        <li>Slack質問 期間中無制限</li>
+        <li>修了デモデイ 90分</li>
+        <li>修了後、サロン入会の権利</li>
+      </ul>
+      <a href="#final" class="btn btn-primary">無料説明会で詳細を聞く</a>
+    </article>
+    <article class="price-card is-sub">
+      <h3>継続サロン（月額）</h3>
+      <p class="duration">本講座修了生のみ ／ 任意加入</p>
+      <div class="price-amount"><b>¥9,800</b><small>／月・税込</small></div>
+      <p class="price-monthly">年払い <b>¥108,000</b>（月割 ¥9,000）</p>
+      <ul>
+        <li>月1回・事例共有会 90分（録画あり）</li>
+        <li>Slack 通年・実験ログのシェア</li>
+        <li>年1回・リアル合宿（東京・任意）</li>
+        <li>いつでも退会できます</li>
+      </ul>
+      <a href="#bridge" class="btn btn-ghost">サロンの詳細</a>
+    </article>
+  </div>
+  <div class="price-guards">
+    <div class="price-guard"><div class="gmark">!</div><div><b>8日間クーリングオフ</b><p>契約書面受領から8日間、無条件で解除可能。</p></div></div>
+    <div class="price-guard"><div class="gmark">¥</div><div><b>初回後7日 返金保証</b><p>初回セッション後7日以内、未消化分について返金対応。</p></div></div>
+    <div class="price-guard"><div class="gmark">⇄</div><div><b>途中解約 可</b><p>講座開始後の中途解約も可能。条件は契約書面に明記。</p></div></div>
+  </div>
+</section>
+
+<section class="faq" id="faq">
+  <div class="faq-head">
+    <span class="chap"><em>07</em>よくある質問</span>
+    <h2 class="section-title">よくいただく質問。</h2>
+  </div>
+  <div class="faq-list">
+    <article class="faq-item">
+      <button class="faq-q" aria-expanded="false"><span class="qmark">Q.01</span><span class="qtext">マーケ未経験でもついていけますか？</span><span class="arrow"></span></button>
+      <div class="faq-a"><div class="faq-a-inner">事業の数字を持っている方なら大丈夫です。GA4／Mixpanel／Amplitude等のツール経験は問いません。Cohort 14までで修了率は約86%（自社実績／n=187／2024年集計）でした。</div></div>
+    </article>
+    <article class="faq-item">
+      <button class="faq-q" aria-expanded="false"><span class="qmark">Q.02</span><span class="qtext">代理店業務やコンサルとは違うんですか？</span><span class="arrow"></span></button>
+      <div class="faq-a"><div class="faq-a-inner">違います。個別の運用代行はしません。シグナルの取り出し方を一緒に整えるのが本講座、運用を続けるのがサロンです。</div></div>
+    </article>
+    <article class="faq-item">
+      <button class="faq-q" aria-expanded="false"><span class="qmark">Q.03</span><span class="qtext">サロンには必ず入る必要がありますか？</span><span class="arrow"></span></button>
+      <div class="faq-a"><div class="faq-a-inner">いいえ、任意です。修了時に「合いそうなら続けていただける」とご案内するだけです。</div></div>
+    </article>
+    <article class="faq-item">
+      <button class="faq-q" aria-expanded="false"><span class="qmark">Q.04</span><span class="qtext">返金やクーリングオフは可能ですか？</span><span class="arrow"></span></button>
+      <div class="faq-a"><div class="faq-a-inner">契約書面受領から8日間は無条件のクーリングオフ可。初回セッション後7日以内は未消化分について返金対応。中途解約も可で、精算条件は契約書面に明記しています。</div></div>
+    </article>
+    <article class="faq-item">
+      <button class="faq-q" aria-expanded="false"><span class="qmark">Q.05</span><span class="qtext">「売上が上がる」効果は保証されますか？</span><span class="arrow"></span></button>
+      <div class="faq-a"><div class="faq-a-inner">保証しません。SIGNAL は数字を保証する講座ではなく、数字の読み方を整える場所です。受講生の声は個別の経験で、SIGNAL がそれを約束するものではありません。</div></div>
+    </article>
+  </div>
+</section>
+
+<section class="final" id="final">
+  <div class="final-wrap">
+    <div class="final-badges">
+      <span class="badge">先着順</span>
+      <span class="badge">残り3枠</span>
+    </div>
+    <h2>まずは<b>無料の説明会</b>に。</h2>
+    <p>月に一度、90分のZoom。SIGNAL の進め方と、お持ちの事業のファネルを簡単にマッピングして終わります。即決の必要はありません。</p>
+    <a href="#" class="btn btn-yellow" onclick="alert('デモLPです');return false;">12月◯日（土）10:00 を予約する</a>
+    <p class="final-foot">今月の説明会枠：残り <b>3</b> 名</p>
+  </div>
+</section>
+
+<footer>
+  <div class="foot-wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-brand">
+          <span class="mark">SIG</span>
+          <span class="name">SIGNAL</span>
+        </div>
+        <p class="foot-tagline">ノイズの中に、シグナルがある。マーケター・グロース担当のための、6ヶ月のコホート型講座と、修了後の月額サロン。</p>
+      </div>
+      <div class="foot-col">
+        <h5>About</h5>
+        <ul>
+          <li><a href="#story">主宰について</a></li>
+          <li><a href="#method">講座の進め方</a></li>
+          <li><a href="#bridge">サロンについて</a></li>
+          <li><a href="#voices">受講生の声</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Join</h5>
+        <ul>
+          <li><a href="#final">無料説明会の予約</a></li>
+          <li><a href="#price">料金とお支払い</a></li>
+          <li><a href="#faq">よくある質問</a></li>
+        </ul>
+      </div>
+      <div class="foot-col">
+        <h5>Legal</h5>
+        <ul>
+          <li><a href="#" onclick="alert('デモLPです');return false;">特定商取引法に基づく表記</a></li>
+          <li><a href="#" onclick="alert('デモLPです');return false;">プライバシーポリシー</a></li>
+          <li><a href="#" onclick="alert('デモLPです');return false;">運営者情報</a></li>
+        </ul>
+      </div>
+    </div>
+    <p class="foot-disclaimer">
+      <strong>本サイトはデモLPです。</strong> aiweb-lab の制作例として作成しました。掲載企業・人物・住所・電話番号・実績数値・受講生インタビューはすべて架空のものです。実在の制作依頼は <a href="../index.html">aiweb-lab.com</a> をご覧ください。
+    </p>
+    <div class="foot-copy">
+      <span>© 2026 aiweb-lab — All rights reserved.</span>
+      <span>Cohort 16 募集中 ／ Winter 2026 ／ Kickoff Apr 2027</span>
+    </div>
+  </div>
+</footer>
+
+<nav class="mobile-cta" aria-label="モバイル下部CTA">
+  <a href="#price" class="a1">料金を見る</a>
+  <a href="#final" class="a2">無料説明会を予約</a>
+</nav>
+
+<script>
+(function(){
+  var burger = document.getElementById('burger');
+  var drawer = document.getElementById('drawer');
+  var bd = document.getElementById('drawer-bd');
+  var closeBtn = document.getElementById('drawer-close');
+  function open(){burger.classList.add('is-open');drawer.classList.add('is-open');bd.classList.add('is-open');drawer.setAttribute('aria-hidden','false')}
+  function close(){burger.classList.remove('is-open');drawer.classList.remove('is-open');bd.classList.remove('is-open');drawer.setAttribute('aria-hidden','true')}
+  burger.addEventListener('click', function(){drawer.classList.contains('is-open') ? close() : open()});
+  bd.addEventListener('click', close);
+  closeBtn.addEventListener('click', close);
+  drawer.querySelectorAll('a').forEach(function(a){a.addEventListener('click', close)});
+
+  document.querySelectorAll('.faq-item').forEach(function(item){
+    var btn = item.querySelector('.faq-q');
+    var ans = item.querySelector('.faq-a');
+    if(ans) ans.setAttribute('aria-hidden','true');
+    btn.addEventListener('click', function(){
+      var open = item.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      if(ans) ans.setAttribute('aria-hidden', open ? 'false' : 'true');
+    });
+  });
+})();
+</script>
+</body>
+</html>

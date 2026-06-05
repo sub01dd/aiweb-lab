@@ -4,42 +4,1300 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex,follow">
-<title>整体院 "凪（なぎ）" - aiweb-lab デモLP</title>
-<meta name="description" content="aiweb-labが制作した整体院向けデモLP。架空のサービスです。">
-<link rel="stylesheet" href="../assets/css/style.css">
+<title>【デモLP】整体院 凪｜西淀川区・千舟の慢性肩こり腰痛 ─ aiweb-lab</title>
+<meta name="description" content="aiweb-lab 制作のデモLPです。架空の整体院『凪（なぎ）』を題材とした、西淀川区の慢性肩こり・腰痛特化整体の制作例。掲載人物・実績・住所・電話番号・お客様の声はすべて架空です。">
+<link rel="canonical" href="https://aiweb-lab.com/demos/salon.html">
+
+<meta property="og:title" content="【デモLP】整体院 凪｜整体院制作例 ─ aiweb-lab">
+<meta property="og:description" content="aiweb-lab 制作のデモLP。架空の整体院『凪』を題材とした、整体院業種の制作例。">
+<meta property="og:type" content="website">
+<meta property="og:image" content="https://placehold.co/1200x630/f7f3ec/2c4a6e?text=Nagi">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Shippori+Mincho:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap" onload="this.onload=null;this.rel='stylesheet'">
+<noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Shippori+Mincho:wght@500;700;800&family=Noto+Sans+JP:wght@400;500;700&display=swap"></noscript>
+
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","name":"【デモLP】整体院 凪 - 制作例","description":"aiweb-lab 制作のデモLP。架空の整体院を題材とした制作例。","isPartOf":{"@type":"WebSite","name":"aiweb-lab","url":"https://aiweb-lab.com/"}}
+</script>
+
 <style>
-  .demo-cs{min-height:100svh;display:grid;place-items:center;padding:80px 24px;text-align:center}
-  .demo-cs .badge{margin-bottom:24px}
-  .demo-cs h1{font-size:clamp(32px,5vw,56px);margin-bottom:16px;letter-spacing:-.03em;line-height:1.2}
-  .demo-cs h1 b{background:var(--grad);-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
-  .demo-cs p{color:var(--fg-muted);max-width:560px;margin:0 auto 32px;line-height:1.85}
-  .demo-cs .back{margin-top:32px}
+/* =========================================================
+   凪（NAGI）— 慢性肩こり・腰痛特化 整体院 LP
+   静の和モダン × 藍主役 × 浅葱アクセント
+   ========================================================= */
+:root{
+  --c-renga:#b85450;
+  --c-ai:#2c4a6e;
+  --c-ai-700:#1d3450;
+  --c-asagi:#5e8a8c;
+  --c-sumi:#1a1a1d;
+  --c-ink:#2b2a28;
+  --c-paper:#f7f3ec;
+  --c-kinari:#ede5d3;
+  --c-hai:#d6d2cb;
+  --c-koke:#5b7a4a;
+  --c-border:#e2ddd2;
+  --c-border-strong:#cdc6b6;
+  --c-mute:#6b6862;
+  --c-mute-2:#8d8a82;
+
+  --bg-base:var(--c-paper);
+  --bg-section:var(--c-kinari);
+  --bg-card:#ffffff;
+  --text-strong:var(--c-sumi);
+  --text-body:var(--c-ink);
+  --text-mute:var(--c-mute);
+  --heading:var(--c-ai);
+  --cta-bg:var(--c-ai);
+  --cta-bg-hover:var(--c-ai-700);
+  --cta-fg:#ffffff;
+  --link:var(--c-ai);
+  --border:var(--c-border);
+  --border-strong:var(--c-border-strong);
+  --accent-line:var(--c-renga);
+
+  --ff-mincho:"Shippori Mincho","Hiragino Mincho ProN","Yu Mincho",serif;
+  --ff-sans:"Noto Sans JP","Hiragino Kaku Gothic ProN","Yu Gothic",sans-serif;
+  --ff-num:"Inter",-apple-system,sans-serif;
+
+  --max:1080px;
+  --max-narrow:880px;
+  --max-letter:680px;
+  --pad:clamp(20px,4vw,40px);
+
+  --shadow-ai:0 6px 16px rgba(44,74,110,.08);
+  --shadow-card:0 10px 30px rgba(44,74,110,.07);
+
+  --ease:cubic-bezier(.2,.7,.2,1);
+}
+
+*,*::before,*::after{box-sizing:border-box}
+*{margin:0;padding:0}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  background:var(--bg-base);
+  color:var(--text-body);
+  font-family:var(--ff-sans);
+  font-size:17px;
+  line-height:2;
+  letter-spacing:.025em;
+  font-feature-settings:"palt";
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+  word-break:auto-phrase;line-break:strict;
+}
+h1,h2,h3,h4{text-wrap:balance}
+p,li,blockquote,dd{text-wrap:pretty}
+@media (max-width:768px){body{font-size:16px;line-height:1.95}}
+img,svg,video{display:block;max-width:100%;height:auto}
+button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
+a{color:inherit;text-decoration:none}
+ul,ol{list-style:none}
+h1,h2,h3,h4{
+  font-family:var(--ff-mincho);font-weight:700;color:var(--heading);
+  line-height:1.5;letter-spacing:.05em;text-wrap:balance;
+  word-break:auto-phrase;
+}
+p{text-wrap:pretty;word-break:auto-phrase}
+em{font-style:normal}
+::selection{background:rgba(44,74,110,.18);color:var(--c-sumi)}
+
+body::before{
+  content:"";position:fixed;inset:0;pointer-events:none;z-index:1;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='220' height='220'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 .15 0 0 0 0 .13 0 0 0 0 .10 0 0 0 .30 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+  mix-blend-mode:multiply;opacity:.04;
+}
+
+.wrap{max-width:var(--max);margin-inline:auto;padding-inline:var(--pad)}
+.wrap-narrow{max-width:var(--max-narrow);margin-inline:auto;padding-inline:var(--pad)}
+.wrap-letter{max-width:var(--max-letter);margin-inline:auto;padding-inline:var(--pad)}
+
+.br-pc{display:inline}
+.br-sp{display:none}
+@media (max-width:768px){.br-pc{display:none}.br-sp{display:inline}}
+
+section{position:relative;z-index:2}
+
+/* ===== demo banner ===== */
+.demo-banner{
+  position:sticky;top:0;z-index:60;
+  background:#f5e3e1;
+  border-bottom:1px solid rgba(184,84,80,.45);
+  padding:9px var(--pad);
+  font-size:12.5px;text-align:center;color:#6a2a27;
+  letter-spacing:.04em;line-height:1.6;
+  box-shadow:0 2px 8px rgba(0,0,0,.04);
+}
+.demo-banner strong{margin-right:.6em;font-weight:700}
+.demo-banner a{
+  color:#7a3a37;border-bottom:1px solid currentColor;
+  padding-bottom:1px;margin-left:.4em;font-weight:500;
+}
+.demo-banner a:hover{color:var(--c-renga)}
+@media (max-width:600px){
+  .demo-banner{font-size:11px;padding:7px 14px}
+  .demo-banner strong{display:block;margin:0 0 2px}
+}
+
+/* ===== site header ===== */
+.hdr{
+  position:sticky;top:34px;z-index:50;
+  background:#f7f3ec;
+  border-bottom:1px solid var(--border);
+  transition:padding .3s var(--ease);
+}
+@media (max-width:600px){.hdr{top:46px}}
+.hdr__inner{
+  max-width:1200px;margin-inline:auto;padding:14px var(--pad);
+  display:flex;align-items:center;justify-content:space-between;gap:24px;
+}
+.hdr__brand{
+  font-family:var(--ff-mincho);font-weight:700;
+  font-size:20px;letter-spacing:.4em;color:var(--c-ai);
+}
+.hdr__brand small{
+  display:block;font-family:var(--ff-num);font-style:italic;
+  font-size:10px;letter-spacing:.3em;color:var(--c-mute);font-weight:500;
+  margin-top:2px;
+}
+.hdr__nav{display:flex;gap:28px;align-items:center;font-size:14px;letter-spacing:.1em;color:var(--c-ink)}
+.hdr__nav a{padding:6px 0;border-bottom:1px solid transparent;transition:border-color .3s,color .3s}
+.hdr__nav a:hover{color:var(--c-ai);border-color:var(--c-ai)}
+.hdr__cta-group{display:flex;gap:10px;align-items:center}
+.hdr__tel{
+  font-family:var(--ff-num);font-weight:600;font-size:14px;color:var(--c-ai);
+  letter-spacing:.04em;display:inline-flex;align-items:center;gap:6px;
+  padding:8px 12px;border:1px solid var(--c-ai);
+}
+.hdr__tel:hover{background:var(--c-ai);color:#fff}
+.hdr__line{
+  font-size:13px;font-weight:500;letter-spacing:.1em;
+  padding:10px 16px;background:var(--c-ai);color:#fff;
+  border:1px solid var(--c-ai);transition:background .25s;
+}
+.hdr__line:hover{background:var(--c-ai-700)}
+.hdr__burger{display:none;width:28px;height:20px;position:relative}
+.hdr__burger span{
+  position:absolute;left:0;right:0;height:1.5px;background:var(--c-ink);
+  transition:transform .35s,top .35s,opacity .35s;
+}
+.hdr__burger span:nth-child(1){top:0}
+.hdr__burger span:nth-child(2){top:9px}
+.hdr__burger span:nth-child(3){top:18px}
+.hdr__burger.is-open span:nth-child(1){top:9px;transform:rotate(45deg)}
+.hdr__burger.is-open span:nth-child(2){opacity:0}
+.hdr__burger.is-open span:nth-child(3){top:9px;transform:rotate(-45deg)}
+
+@media (max-width:980px){
+  .hdr__nav{
+    position:fixed;inset:0;background:#f7f3ec;z-index:90;
+    flex-direction:column;align-items:stretch;gap:0;
+    padding:88px var(--pad) 32px;
+    transform:translateY(-110%);
+    transition:transform .35s var(--ease);
+    overflow-y:auto;
+    pointer-events:none;
+  }
+  .hdr__nav.is-open{transform:translateY(0);pointer-events:auto;box-shadow:0 0 40px rgba(0,0,0,.18)}
+  .hdr__burger{position:relative;z-index:95}
+  .hdr__nav a{padding:14px 0;width:100%;border-bottom:1px solid var(--border);font-size:16px}
+  .hdr__burger{display:block}
+  .hdr__cta-group .hdr__tel{display:none}
+}
+@media (max-width:600px){
+  .hdr__inner{padding:10px 16px;gap:10px}
+  .hdr__brand{font-size:16px;letter-spacing:.3em}
+  .hdr__brand small{font-size:9px}
+  .hdr__line{padding:8px 12px;font-size:12px;letter-spacing:.06em}
+}
+
+/* ===== buttons ===== */
+.btn{
+  display:inline-flex;align-items:center;justify-content:center;gap:10px;
+  font-family:var(--ff-sans);font-weight:600;font-size:15px;letter-spacing:.1em;
+  padding:18px 32px;border-radius:4px;
+  transition:background .25s var(--ease),color .25s var(--ease),transform .25s var(--ease);
+  white-space:nowrap;
+}
+.btn--primary{background:var(--cta-bg);color:var(--cta-fg);border:1px solid var(--cta-bg)}
+.btn--primary:hover{background:var(--cta-bg-hover);transform:translateY(-1px)}
+.btn--ghost{background:transparent;color:var(--c-ai);border:1px solid var(--c-ai)}
+.btn--ghost:hover{background:var(--c-ai);color:#fff}
+.btn--lg{padding:20px 40px;font-size:16px}
+.btn .ic{width:18px;height:18px;flex:0 0 auto}
+
+/* ===== section frame ===== */
+.section{padding-block:clamp(80px,11vw,160px)}
+.section--tight{padding-block:clamp(64px,8vw,120px)}
+.section--paper{background:var(--bg-base)}
+.section--kinari{background:var(--bg-section)}
+.section--card{background:var(--bg-card);border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
+.section--ai{background:var(--c-ai);color:#fff}
+.section--ai h2,.section--ai h3{color:#fff}
+
+.kicker{
+  display:inline-flex;align-items:center;gap:14px;
+  font-family:var(--ff-num);font-style:italic;font-weight:500;
+  font-size:12px;letter-spacing:.32em;text-transform:uppercase;
+  color:var(--c-renga);margin-bottom:18px;
+}
+.kicker::before{
+  content:"";width:32px;height:1px;background:var(--c-renga);
+}
+.kicker .num{font-style:normal;font-family:var(--ff-num);color:var(--c-ai);font-weight:600;letter-spacing:.1em}
+
+.h2{
+  font-family:var(--ff-mincho);font-weight:700;
+  font-size:clamp(26px,3.4vw,34px);line-height:1.55;letter-spacing:.05em;
+  color:var(--heading);margin-bottom:32px;
+}
+.h2 em{color:var(--c-renga);font-style:normal;border-bottom:2px solid var(--c-renga);padding-bottom:2px}
+.lede{
+  font-size:clamp(15px,1.1vw,17px);line-height:2.05;
+  color:var(--text-body);max-width:34em;
+}
+
+/* reveal */
+.reveal{opacity:0;transform:translateY(20px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+.reveal.is-in{opacity:1;transform:none}
+.reveal-d1{transition-delay:.1s}
+.reveal-d2{transition-delay:.2s}
+.reveal-d3{transition-delay:.3s}
+
+/* ===== 01 FV ===== */
+.fv{
+  position:relative;background:var(--bg-base);overflow:hidden;
+  padding:clamp(72px,9vw,140px) 0 clamp(80px,10vw,140px);
+}
+.fv__grid{
+  display:grid;grid-template-columns:1.05fr .95fr;gap:clamp(36px,5vw,72px);
+  align-items:center;
+}
+.fv__copy{position:relative;z-index:2}
+.fv__eyebrow{
+  font-family:var(--ff-num);font-style:italic;font-size:13px;
+  letter-spacing:.28em;color:var(--c-asagi);margin-bottom:22px;
+}
+.fv__title{
+  font-family:var(--ff-mincho);font-weight:700;
+  font-size:clamp(36px,5.2vw,58px);line-height:1.42;letter-spacing:.04em;
+  color:var(--c-ai);margin-bottom:26px;
+  text-wrap:balance;
+}
+.fv__title em{color:var(--c-renga);font-style:normal}
+.fv__sub{
+  font-size:clamp(15px,1.15vw,18px);line-height:2;letter-spacing:.06em;
+  color:var(--text-body);max-width:24em;margin-bottom:36px;
+}
+.fv__badges{
+  display:flex;flex-wrap:wrap;gap:10px 14px;margin-bottom:32px;
+}
+.fv__badges span{
+  display:inline-flex;align-items:center;gap:8px;
+  font-size:12.5px;letter-spacing:.16em;color:var(--c-ai);font-weight:500;
+  padding:6px 12px;border:1px solid var(--c-ai);background:#fff;
+}
+.fv__badges span::before{
+  content:"";width:5px;height:5px;background:var(--c-asagi);border-radius:50%;display:inline-block;
+}
+.fv__price{
+  display:flex;align-items:baseline;gap:14px;margin-bottom:30px;
+  font-family:var(--ff-mincho);
+}
+.fv__price .new{font-size:clamp(22px,2.6vw,28px);font-weight:700;color:var(--c-ai);letter-spacing:.04em}
+.fv__price .new small{font-size:.55em;margin-left:4px;color:var(--c-mute);font-weight:500;letter-spacing:.1em}
+.fv__price .old{font-size:14px;color:var(--c-mute);text-decoration:line-through;letter-spacing:.04em}
+.fv__cta{display:flex;flex-wrap:wrap;gap:14px;margin-bottom:24px}
+.fv__cta .btn{flex:1 1 220px;max-width:300px}
+.fv__location{
+  font-size:12.5px;letter-spacing:.12em;color:var(--c-mute);
+  display:inline-flex;align-items:center;gap:8px;
+}
+.fv__location::before{
+  content:"";width:14px;height:14px;display:inline-block;
+  background:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%236b6862' stroke-width='1.5'><path d='M12 2a7 7 0 0 0-7 7c0 5 7 13 7 13s7-8 7-13a7 7 0 0 0-7-7z'/><circle cx='12' cy='9' r='2.5'/></svg>") center/contain no-repeat;
+}
+
+/* hero image (hand close-up placeholder) */
+.fv__visual{position:relative;aspect-ratio:4/5;background:var(--c-kinari);overflow:hidden}
+.fv__visual::before{
+  content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(45deg,#ede5d3 0 10px,#f3eddd 10px 20px);
+  opacity:.85;
+}
+.fv__visual::after{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse at 70% 30%, rgba(94,138,140,.18), transparent 60%),
+    radial-gradient(ellipse at 30% 80%, rgba(44,74,110,.10), transparent 55%);
+}
+.fv__visual-note{
+  position:absolute;bottom:18px;left:18px;z-index:2;
+  font-family:var(--ff-num);font-style:italic;font-size:11px;
+  letter-spacing:.22em;color:var(--c-mute);text-transform:uppercase;
+}
+.fv__visual-tate{
+  position:absolute;top:24px;right:22px;z-index:2;
+  writing-mode:vertical-rl;
+  font-family:var(--ff-mincho);font-weight:500;
+  font-size:13px;letter-spacing:.45em;color:var(--c-ai);
+  background:rgba(247,243,236,.85);padding:14px 5px;
+}
+.fv__chapter{
+  position:absolute;top:50%;right:-30px;transform:translateY(-50%);
+  font-family:var(--ff-mincho);font-weight:800;
+  font-size:clamp(140px,18vw,260px);line-height:1;
+  color:transparent;-webkit-text-stroke:1px rgba(44,74,110,.10);
+  pointer-events:none;user-select:none;z-index:0;
+}
+@media (max-width:880px){
+  .fv__grid{grid-template-columns:1fr;gap:32px}
+  .fv__visual{aspect-ratio:5/4;max-height:420px;order:-1}
+  .fv__chapter{display:none}
+}
+@media (max-width:600px){
+  .fv__cta .btn{flex:1 1 100%;max-width:none}
+}
+
+/* ===== 02 悩み ===== */
+.pain{background:var(--bg-section);padding-block:clamp(80px,10vw,140px)}
+.pain__head{text-align:center;margin-bottom:48px}
+.pain__list{
+  max-width:680px;margin:0 auto;
+  display:flex;flex-direction:column;gap:18px;
+}
+.pain__list li{
+  font-family:var(--ff-mincho);font-weight:500;
+  font-size:clamp(17px,1.5vw,21px);line-height:1.9;letter-spacing:.06em;
+  color:var(--c-sumi);padding:20px 24px;
+  background:#fff;border-left:3px solid var(--c-asagi);
+  box-shadow:var(--shadow-ai);
+  opacity:0;transform:translateX(-12px);
+  transition:opacity .7s var(--ease),transform .7s var(--ease);
+}
+.pain__list.is-in li{opacity:1;transform:none}
+.pain__list.is-in li:nth-child(1){transition-delay:.05s}
+.pain__list.is-in li:nth-child(2){transition-delay:.18s}
+.pain__list.is-in li:nth-child(3){transition-delay:.31s}
+.pain__list.is-in li:nth-child(4){transition-delay:.44s}
+.pain__list.is-in li:nth-child(5){transition-delay:.57s}
+.pain__foot{
+  text-align:center;margin-top:42px;font-size:14.5px;color:var(--c-mute);
+  font-family:var(--ff-mincho);font-weight:400;letter-spacing:.06em;
+}
+
+/* ===== 03 なぜ繰り返す ===== */
+.why{padding-block:clamp(96px,12vw,160px)}
+.why__head{margin-bottom:64px;max-width:36em}
+.why__items{display:flex;flex-direction:column;gap:clamp(48px,7vw,96px)}
+.why__item{
+  display:grid;grid-template-columns:auto 1fr;gap:36px;align-items:start;
+  max-width:880px;
+}
+.why__item:nth-child(even){margin-left:auto;grid-template-columns:1fr auto;direction:rtl}
+.why__item:nth-child(even) > *{direction:ltr}
+.why__item .no{
+  font-family:var(--ff-mincho);font-weight:700;
+  font-size:clamp(48px,6vw,72px);line-height:1;color:var(--c-renga);
+  letter-spacing:0;
+}
+.why__item h3{
+  font-size:clamp(20px,2.1vw,26px);line-height:1.55;color:var(--c-ai);margin-bottom:14px;
+  letter-spacing:.05em;
+}
+.why__item p{font-size:15.5px;line-height:2;color:var(--text-body)}
+@media (max-width:680px){
+  .why__item,.why__item:nth-child(even){grid-template-columns:1fr;gap:14px;direction:ltr;margin-left:0}
+  .why__item .no{font-size:42px}
+}
+
+/* ===== 04 5つの特徴 ===== */
+.merits{background:var(--bg-section)}
+.merits__head{margin-bottom:48px;text-align:center}
+.merits__list{
+  max-width:880px;margin:0 auto;
+  display:flex;flex-direction:column;gap:0;
+}
+.merits__item{
+  display:grid;grid-template-columns:auto 1fr;gap:28px;
+  padding:32px 0;border-top:1px solid var(--border-strong);
+  align-items:start;
+}
+.merits__item:last-child{border-bottom:1px solid var(--border-strong)}
+.merits__no{
+  font-family:var(--ff-num);font-weight:600;font-style:italic;
+  font-size:14px;letter-spacing:.16em;color:var(--c-renga);
+  padding-top:4px;
+}
+.merits__body h3{
+  font-size:clamp(18px,1.8vw,22px);color:var(--c-ai);margin-bottom:10px;letter-spacing:.05em;
+}
+.merits__body p{font-size:15.5px;line-height:2;color:var(--text-body)}
+
+/* ===== 05 施術の特徴 ===== */
+.care{padding-block:clamp(96px,12vw,160px)}
+.care__grid{
+  display:grid;grid-template-columns:1fr 1fr;gap:clamp(36px,5vw,72px);
+  align-items:center;
+}
+.care__copy h2{margin-bottom:24px}
+.care__copy p{font-size:15.5px;line-height:2.05;margin-bottom:18px;color:var(--text-body)}
+.care__copy p:last-child{margin-bottom:0}
+.care__copy .name{
+  display:inline-block;font-family:var(--ff-mincho);font-weight:600;
+  color:var(--c-asagi);border-bottom:1px solid var(--c-asagi);
+  padding-bottom:1px;
+}
+.care__photos{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+.care__ph{position:relative;background:var(--c-kinari);aspect-ratio:4/5;overflow:hidden}
+.care__ph::before{
+  content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(45deg,#ede5d3 0 8px,#f3eddd 8px 16px);opacity:.85;
+}
+.care__ph::after{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse at 60% 40%, rgba(94,138,140,.15), transparent 65%);
+}
+.care__ph:nth-child(2){aspect-ratio:4/5;transform:translateY(28px)}
+.care__ph span{
+  position:absolute;bottom:14px;left:14px;z-index:2;
+  font-family:var(--ff-num);font-style:italic;font-size:10.5px;
+  letter-spacing:.2em;color:var(--c-mute);text-transform:uppercase;
+}
+@media (max-width:880px){
+  .care__grid{grid-template-columns:1fr;gap:36px}
+  .care__ph:nth-child(2){transform:none}
+}
+
+/* ===== 06 お客様の声 ===== */
+.voice{background:var(--bg-section)}
+.voice__head{text-align:center;margin-bottom:56px}
+.voice__grid{
+  display:grid;grid-template-columns:repeat(2,1fr);gap:24px;
+  max-width:1000px;margin-inline:auto;
+}
+.voice__card{
+  background:#fff;padding:32px 28px;
+  border-top:2px solid var(--c-ai);
+  position:relative;
+}
+.voice__card::before{
+  content:"\201C";position:absolute;top:8px;right:18px;
+  font-family:var(--ff-mincho);font-size:54px;color:var(--c-asagi);opacity:.35;line-height:1;
+}
+.voice__tags{
+  display:flex;gap:8px;flex-wrap:wrap;margin-bottom:14px;
+  font-size:11.5px;letter-spacing:.12em;
+}
+.voice__tags span{
+  padding:3px 9px;background:var(--c-kinari);color:var(--c-mute);
+  font-weight:500;
+}
+.voice__text{
+  font-size:15px;line-height:2;color:var(--text-body);margin-bottom:18px;
+}
+.voice__who{
+  font-size:13px;letter-spacing:.06em;color:var(--c-mute);
+  font-family:var(--ff-mincho);font-weight:500;
+}
+.voice__who::before{
+  content:"";display:inline-block;width:18px;height:1px;background:var(--c-asagi);
+  vertical-align:middle;margin-right:8px;
+}
+.voice__note{
+  margin-top:18px;font-size:11.5px;color:var(--c-mute-2);
+  letter-spacing:.06em;
+}
+.voice__disclaimer{
+  max-width:680px;margin:48px auto 0;text-align:center;
+  font-size:12.5px;line-height:1.85;color:var(--c-mute);letter-spacing:.04em;
+}
+@media (max-width:740px){
+  .voice__grid{grid-template-columns:1fr}
+}
+
+/* ===== 07 通院モデル ===== */
+.plan{padding-block:clamp(96px,12vw,160px)}
+.plan__head{text-align:center;margin-bottom:64px}
+.plan__line{
+  max-width:780px;margin:0 auto;position:relative;
+}
+.plan__line::before{
+  content:"";position:absolute;left:18px;top:0;bottom:0;width:1px;
+  background:var(--c-border-strong);
+}
+.plan__step{
+  position:relative;padding:0 0 48px 60px;
+}
+.plan__step:last-child{padding-bottom:0}
+.plan__step .dot{
+  position:absolute;left:11px;top:6px;width:15px;height:15px;border-radius:50%;
+  background:var(--c-ai);border:3px solid var(--bg-base);
+  box-shadow:0 0 0 1px var(--c-ai);
+}
+.plan__step .when{
+  font-family:var(--ff-num);font-style:italic;font-size:13px;
+  letter-spacing:.16em;color:var(--c-renga);margin-bottom:6px;font-weight:500;
+}
+.plan__step h3{
+  font-size:clamp(17px,1.6vw,20px);color:var(--c-ai);margin-bottom:8px;letter-spacing:.05em;
+}
+.plan__step p{font-size:15px;line-height:1.95;color:var(--text-body)}
+.plan__note{
+  max-width:680px;margin:36px auto 0;text-align:center;
+  font-size:12.5px;color:var(--c-mute);line-height:1.85;
+}
+
+/* ===== 08 施術者紹介 ===== */
+.about{background:var(--bg-section);padding-block:clamp(96px,12vw,160px)}
+.about__grid{
+  display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(36px,5vw,72px);
+  align-items:start;max-width:1040px;margin-inline:auto;
+}
+.about__photo{
+  position:relative;background:var(--c-paper);aspect-ratio:4/5;overflow:hidden;
+  border:1px solid var(--border-strong);
+}
+.about__photo::before{
+  content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(45deg,#ede5d3 0 8px,#f3eddd 8px 16px);opacity:.7;
+}
+.about__photo::after{
+  content:"";position:absolute;inset:0;
+  background:radial-gradient(ellipse at 50% 35%, rgba(44,74,110,.10), transparent 65%);
+}
+.about__photo span{
+  position:absolute;bottom:18px;left:18px;z-index:2;
+  font-family:var(--ff-num);font-style:italic;font-size:11px;
+  letter-spacing:.22em;color:var(--c-mute);text-transform:uppercase;
+}
+.about__copy h2{margin-bottom:28px}
+.about__meta{
+  display:grid;grid-template-columns:auto 1fr;gap:8px 18px;
+  font-size:13.5px;color:var(--text-body);
+  padding-bottom:24px;margin-bottom:28px;border-bottom:1px solid var(--border-strong);
+}
+.about__meta dt{
+  font-family:var(--ff-num);font-style:italic;font-size:11.5px;
+  letter-spacing:.2em;color:var(--c-renga);text-transform:uppercase;padding-top:4px;
+}
+.about__meta dd{font-family:var(--ff-mincho);font-weight:500;letter-spacing:.06em;line-height:1.85}
+.about__copy p{font-size:15.5px;line-height:2.05;margin-bottom:16px}
+.about__copy p:last-child{margin-bottom:0}
+@media (max-width:780px){
+  .about__grid{grid-template-columns:1fr;gap:32px}
+  .about__photo{max-height:480px;aspect-ratio:5/4}
+}
+
+/* ===== 09 料金 ===== */
+.price{padding-block:clamp(96px,12vw,160px)}
+.price__head{text-align:center;margin-bottom:56px}
+.price__table{
+  max-width:780px;margin:0 auto;
+  display:flex;flex-direction:column;gap:0;
+}
+.price__row{
+  display:grid;grid-template-columns:1.4fr auto;gap:18px;align-items:baseline;
+  padding:24px 4px;border-top:1px solid var(--border-strong);
+}
+.price__row:last-child{border-bottom:1px solid var(--border-strong)}
+.price__row.feat{background:rgba(94,138,140,.07);padding-left:18px;padding-right:18px}
+.price__row .label{
+  font-family:var(--ff-mincho);font-weight:500;font-size:16px;color:var(--c-sumi);letter-spacing:.05em;
+}
+.price__row .label small{
+  display:block;font-family:var(--ff-sans);font-weight:400;font-size:12.5px;
+  letter-spacing:.04em;color:var(--c-mute);margin-top:4px;line-height:1.75;
+}
+.price__row .yen{
+  font-family:var(--ff-mincho);font-weight:700;font-size:clamp(20px,2.2vw,26px);
+  color:var(--c-ai);letter-spacing:.04em;white-space:nowrap;
+}
+.price__row .yen .strike{
+  font-size:.55em;color:var(--c-mute);text-decoration:line-through;
+  font-weight:400;margin-right:8px;letter-spacing:.04em;
+}
+.price__row.feat .yen{color:var(--c-renga)}
+.price__note{
+  max-width:680px;margin:32px auto 0;font-size:12.5px;color:var(--c-mute);
+  line-height:1.95;letter-spacing:.04em;
+}
+.price__note + .price__note{margin-top:8px}
+
+/* ===== 10 来院の流れ ===== */
+.flow{background:var(--bg-section);padding-block:clamp(96px,12vw,160px)}
+.flow__head{text-align:center;margin-bottom:56px}
+.flow__grid{
+  display:grid;grid-template-columns:repeat(3,1fr);gap:18px;
+  max-width:1040px;margin-inline:auto;
+}
+.flow__step{
+  background:#fff;padding:24px 20px;position:relative;
+  display:flex;flex-direction:column;gap:10px;
+}
+.flow__step .step-no{
+  font-family:var(--ff-num);font-weight:600;font-style:italic;
+  font-size:13px;letter-spacing:.18em;color:var(--c-renga);
+}
+.flow__step h4{
+  font-family:var(--ff-mincho);font-weight:600;
+  font-size:16px;letter-spacing:.06em;color:var(--c-ai);
+}
+.flow__step p{font-size:13.5px;line-height:1.9;color:var(--text-body)}
+.flow__step .ph{
+  width:100%;aspect-ratio:5/3;background:var(--c-kinari);
+  margin-bottom:6px;position:relative;overflow:hidden;
+}
+.flow__step .ph::before{
+  content:"";position:absolute;inset:0;
+  background:repeating-linear-gradient(45deg,#ede5d3 0 6px,#f3eddd 6px 12px);opacity:.7;
+}
+@media (max-width:780px){.flow__grid{grid-template-columns:1fr 1fr}}
+@media (max-width:520px){.flow__grid{grid-template-columns:1fr}}
+
+/* ===== 11 FAQ ===== */
+.faq{padding-block:clamp(96px,12vw,160px)}
+.faq__head{text-align:center;margin-bottom:48px}
+.faq__list{max-width:780px;margin:0 auto;display:flex;flex-direction:column;gap:0}
+.faq__item{border-top:1px solid var(--border-strong)}
+.faq__item:last-child{border-bottom:1px solid var(--border-strong)}
+.faq__q{
+  width:100%;display:flex;align-items:center;justify-content:space-between;gap:18px;
+  padding:22px 4px;text-align:left;
+  font-family:var(--ff-mincho);font-weight:500;font-size:16px;color:var(--c-ai);
+  letter-spacing:.05em;line-height:1.7;
+  transition:color .25s;
+}
+.faq__q::before{
+  content:"Q";flex:0 0 auto;
+  font-family:var(--ff-num);font-weight:700;font-size:14px;color:var(--c-renga);
+  letter-spacing:0;margin-right:14px;width:18px;
+}
+.faq__q .ic{
+  flex:0 0 auto;width:14px;height:14px;position:relative;transition:transform .35s var(--ease);
+}
+.faq__q .ic::before,.faq__q .ic::after{
+  content:"";position:absolute;background:var(--c-ai);
+}
+.faq__q .ic::before{left:0;right:0;top:50%;height:1.5px;transform:translateY(-50%)}
+.faq__q .ic::after{top:0;bottom:0;left:50%;width:1.5px;transform:translateX(-50%);transition:transform .35s var(--ease)}
+.faq__item.is-open .faq__q .ic::after{transform:translateX(-50%) scaleY(0)}
+.faq__a{
+  max-height:0;overflow:hidden;transition:max-height .45s var(--ease);
+}
+.faq__a > div{
+  padding:0 4px 22px 32px;font-size:14.5px;line-height:1.95;color:var(--text-body);
+}
+.faq__item.is-open .faq__a{max-height:400px}
+
+/* ===== 12 アクセス ===== */
+.access{background:var(--bg-section);padding-block:clamp(96px,12vw,160px)}
+.access__head{text-align:center;margin-bottom:56px}
+.access__grid{
+  display:grid;grid-template-columns:.95fr 1.05fr;gap:clamp(36px,5vw,72px);
+  align-items:start;max-width:1040px;margin-inline:auto;
+}
+.access__map{
+  position:relative;min-height:380px;background:var(--bg-card);
+  border:1px solid var(--border-strong);overflow:hidden;
+}
+.access__map iframe{width:100%;height:100%;min-height:380px;border:0;filter:saturate(.9) contrast(1.02)}
+.access__info dl{
+  display:grid;grid-template-columns:auto 1fr;gap:14px 22px;
+  font-size:14.5px;
+}
+.access__info dt{
+  font-family:var(--ff-num);font-style:italic;font-size:12px;
+  letter-spacing:.22em;color:var(--c-renga);text-transform:uppercase;
+  padding-top:6px;border-top:1px solid var(--border-strong);min-width:5.5em;
+}
+.access__info dd{
+  font-family:var(--ff-mincho);font-weight:500;letter-spacing:.05em;line-height:1.95;
+  padding-top:6px;border-top:1px solid var(--border-strong);color:var(--c-sumi);
+}
+.access__info dd small{display:block;font-family:var(--ff-sans);font-weight:400;font-size:12px;color:var(--c-mute);margin-top:4px;letter-spacing:.04em}
+@media (max-width:780px){
+  .access__grid{grid-template-columns:1fr;gap:32px}
+  .access__map{min-height:300px}
+  .access__map iframe{min-height:300px}
+}
+
+/* ===== 13 最終CTA ===== */
+.cta-final{
+  background:var(--bg-base);
+  padding-block:clamp(96px,12vw,140px);text-align:center;position:relative;overflow:hidden;
+}
+.cta-final::before{
+  content:"";position:absolute;inset:0;
+  background:
+    radial-gradient(ellipse at 20% 20%, rgba(94,138,140,.10), transparent 60%),
+    radial-gradient(ellipse at 80% 80%, rgba(44,74,110,.08), transparent 60%);
+  pointer-events:none;
+}
+.cta-final__inner{position:relative;z-index:1;max-width:680px;margin:0 auto}
+.cta-final .h2{font-size:clamp(28px,3.6vw,38px);margin-bottom:24px}
+.cta-final p{font-size:15.5px;line-height:2.05;color:var(--text-body);margin-bottom:36px;max-width:34em;margin-inline:auto}
+.cta-final__buttons{
+  display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:24px;
+}
+.cta-final__buttons .btn{flex:1 1 240px;max-width:300px}
+.cta-final__meta{
+  display:inline-flex;gap:18px;align-items:center;flex-wrap:wrap;justify-content:center;
+  font-size:12.5px;letter-spacing:.12em;color:var(--c-mute);margin-top:8px;
+}
+.cta-final__meta span{display:inline-flex;align-items:center;gap:6px}
+.cta-final__meta span::before{
+  content:"";width:5px;height:5px;background:var(--c-asagi);border-radius:50%;
+}
+
+/* ===== footer ===== */
+.foot{
+  background:#fff;border-top:1px solid var(--border);
+  padding:48px var(--pad) 24px;
+}
+.foot__inner{max-width:1080px;margin:0 auto}
+.foot__top{
+  display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:36px;
+  margin-bottom:36px;
+}
+.foot__brand{
+  font-family:var(--ff-mincho);font-weight:700;font-size:22px;
+  letter-spacing:.4em;color:var(--c-ai);margin-bottom:14px;
+}
+.foot__brand small{
+  display:block;font-family:var(--ff-num);font-style:italic;
+  font-size:10.5px;letter-spacing:.3em;color:var(--c-mute);margin-top:4px;font-weight:500;
+}
+.foot__desc{font-size:13px;line-height:1.95;color:var(--text-body);max-width:24em}
+.foot h5{
+  font-family:var(--ff-num);font-style:italic;font-size:11.5px;
+  letter-spacing:.3em;color:var(--c-renga);text-transform:uppercase;margin-bottom:14px;font-weight:600;
+}
+.foot ul{display:flex;flex-direction:column;gap:8px;font-size:13px;color:var(--text-body)}
+.foot ul a:hover{color:var(--c-ai)}
+.foot__google{
+  display:inline-flex;align-items:center;gap:8px;
+  padding:10px 16px;border:1px solid var(--border-strong);
+  font-size:12px;letter-spacing:.08em;color:var(--c-ai);
+  margin-top:8px;transition:background .25s,color .25s;
+}
+.foot__google:hover{background:var(--c-ai);color:#fff;border-color:var(--c-ai)}
+.foot__disclaimer{
+  margin-top:36px;padding:20px 22px;border:1px solid var(--border-strong);
+  background:var(--bg-section);
+  font-size:13px;line-height:1.95;color:var(--c-ink);letter-spacing:.04em;
+}
+.foot__disclaimer strong{color:var(--c-renga);font-weight:700;margin-right:.4em}
+.foot__disclaimer a{color:var(--c-ai);border-bottom:1px solid currentColor;font-weight:500}
+.foot__bottom{
+  margin-top:18px;padding-top:18px;border-top:1px solid var(--border);
+  display:flex;justify-content:space-between;align-items:center;gap:16px;flex-wrap:wrap;
+  font-family:var(--ff-num);font-style:italic;font-size:11px;letter-spacing:.18em;color:var(--c-mute-2);
+}
+@media (max-width:780px){
+  .foot__top{grid-template-columns:1fr;gap:28px}
+  .foot__bottom{flex-direction:column;text-align:center;gap:8px}
+}
+
+/* ===== mobile sticky CTA bar ===== */
+.mbar{
+  position:fixed;left:0;right:0;bottom:0;z-index:45;display:none;
+  background:rgba(247,243,236,.97);
+  backdrop-filter:blur(10px);-webkit-backdrop-filter:blur(10px);
+  border-top:1px solid var(--border);
+  padding:8px;gap:8px;
+  transition:transform .45s var(--ease);
+}
+.mbar a{
+  flex:1;text-align:center;padding:14px 10px;
+  font-family:var(--ff-mincho);font-weight:600;font-size:13px;letter-spacing:.1em;
+  border-radius:4px;
+}
+.mbar .tel{border:1px solid var(--c-ai);color:var(--c-ai);background:#fff}
+.mbar .line{background:var(--c-ai);color:#fff;border:1px solid var(--c-ai)}
+.mbar.is-hidden{transform:translateY(110%);pointer-events:none}
+@media (max-width:780px){
+  .mbar{display:flex}
+  .foot{padding-bottom:96px}
+}
+
+/* ===== PC floating CTA ===== */
+.pcta{
+  position:fixed;right:24px;bottom:24px;z-index:45;
+  background:var(--c-ai);color:#fff;
+  padding:14px 22px;font-family:var(--ff-mincho);font-weight:600;
+  font-size:13.5px;letter-spacing:.12em;border-radius:4px;
+  box-shadow:0 12px 30px rgba(44,74,110,.25);
+  transition:transform .35s var(--ease),background .25s;
+}
+.pcta:hover{background:var(--c-ai-700);transform:translateY(-2px)}
+.pcta.is-hidden{transform:translateY(140%);pointer-events:none}
+@media (max-width:780px){.pcta{display:none}}
+
+/* ===== handwritten note ===== */
+.hand-note{
+  display:inline-block;font-family:var(--ff-mincho);font-style:italic;font-weight:500;
+  font-size:13px;color:var(--c-renga);
+  transform:rotate(-2deg);transform-origin:left center;
+  padding:6px 0;letter-spacing:.05em;
+}
+
+/* =========================================================
+   v4 — 手紙型LP用 追加CSS
+   ========================================================= */
+
+/* ===== hero (simplified) ===== */
+.hero2{position:relative;background:var(--bg-base);padding:clamp(72px,9vw,140px) 0 clamp(56px,7vw,100px);overflow:hidden}
+.hero2__inner{max-width:780px;margin:0 auto;padding:0 var(--pad);text-align:center}
+.hero2__eyebrow{font-family:var(--ff-num);font-style:italic;font-size:13px;letter-spacing:.28em;color:var(--c-asagi);margin-bottom:24px}
+.hero2__title{font-family:var(--ff-mincho);font-weight:700;font-size:clamp(34px,5.4vw,58px);line-height:1.5;letter-spacing:.05em;color:var(--c-ai);margin-bottom:28px;text-wrap:balance}
+.hero2__title em{color:var(--c-renga);font-style:normal}
+.hero2__sub{font-family:var(--ff-mincho);font-weight:400;font-size:clamp(15px,1.2vw,18px);line-height:2;letter-spacing:.06em;color:var(--text-body);max-width:30em;margin:0 auto 36px}
+.hero2__cta{display:flex;justify-content:center;gap:14px;flex-wrap:wrap}
+.hero2__cta .ll{display:inline-block;font-size:14px;color:var(--c-ai);border-bottom:1px solid var(--c-ai);padding:6px 0;letter-spacing:.1em;font-family:var(--ff-mincho);font-weight:500}
+.hero2__cta .ll:hover{color:var(--c-ai-700);border-color:var(--c-ai-700)}
+.hero2__tate{position:absolute;top:50%;right:max(24px,4vw);transform:translateY(-50%);writing-mode:vertical-rl;font-family:var(--ff-mincho);font-weight:500;font-size:12px;letter-spacing:.5em;color:var(--c-mute);opacity:.6}
+@media (max-width:780px){.hero2__tate{display:none}}
+
+/* ===== profile (compact card replacing letter+today) ===== */
+.profile{padding-block:clamp(64px,8vw,100px);background:var(--bg-base)}
+.profile__inner{max-width:880px;margin:0 auto;padding:0 var(--pad)}
+.profile__card{
+  display:grid;grid-template-columns:200px 1fr;gap:32px;
+  background:#fff;padding:28px;border:1px solid var(--border-strong);
+  box-shadow:var(--shadow-ai);align-items:center;
+}
+.profile__ph{
+  position:relative;aspect-ratio:4/5;background:var(--c-kinari) url('../assets/img/demos/salon/portrait.png') center/cover no-repeat;overflow:hidden;
+}
+.profile__ph::before{content:"";position:absolute;inset:0;background:linear-gradient(180deg,transparent 60%,rgba(0,0,0,.35) 100%)}
+.profile__ph span{position:absolute;bottom:12px;left:12px;z-index:2;font-family:var(--ff-num);font-style:italic;font-size:10px;letter-spacing:.2em;color:var(--c-mute);text-transform:uppercase}
+.profile__name{font-family:var(--ff-mincho);font-weight:700;font-size:22px;color:var(--c-ai);letter-spacing:.05em;line-height:1.4}
+.profile__name small{display:block;font-family:var(--ff-sans);font-weight:400;font-size:12px;color:var(--c-mute);letter-spacing:.1em;margin-top:4px}
+.profile__intro{margin-top:18px;font-size:14.5px;line-height:2;color:var(--text-body);letter-spacing:.04em}
+.profile__intro em{font-style:normal;color:var(--c-renga);font-weight:500;background:linear-gradient(transparent 65%,rgba(184,84,80,.12) 65%)}
+.profile__sig{margin-top:14px;font-family:var(--ff-mincho);font-weight:500;font-size:14px;color:var(--c-mute);letter-spacing:.08em}
+@media (max-width:680px){
+  .profile__card{grid-template-columns:1fr;gap:20px;padding:18px}
+  .profile__ph{max-width:200px;margin:0 auto}
+  .profile__intro{font-size:14px;letter-spacing:.02em;word-break:auto-phrase;text-wrap:pretty}
+  .profile__name{font-size:20px}
+}
+
+/* ===== fit/no-fit ===== */
+.fit{padding-block:clamp(80px,11vw,140px);background:var(--bg-section)}
+.fit__head{text-align:center;margin-bottom:48px;max-width:680px;margin-inline:auto;padding:0 var(--pad)}
+.fit__grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;max-width:880px;margin:0 auto;padding:0 var(--pad)}
+.fit__col{background:#fff;padding:32px 28px}
+.fit__col--yes{border-top:3px solid var(--c-asagi)}
+.fit__col--no{border-top:3px solid var(--c-renga)}
+.fit__col h3{font-family:var(--ff-mincho);font-weight:600;font-size:17px;letter-spacing:.08em;margin-bottom:20px;color:var(--c-ai)}
+.fit__col--no h3{color:var(--c-renga)}
+.fit__col ul{display:flex;flex-direction:column;gap:14px}
+.fit__col li{font-size:14.5px;line-height:1.95;padding-left:22px;position:relative;color:var(--text-body)}
+.fit__col--yes li::before{content:"";position:absolute;left:0;top:.85em;width:12px;height:1.5px;background:var(--c-asagi)}
+.fit__col--no li::before{content:"×";position:absolute;left:2px;top:0;color:var(--c-renga);font-weight:700;font-size:14px}
+@media (max-width:680px){.fit__grid{grid-template-columns:1fr}}
+
+
+/* ===== process (treatment+flow merged) ===== */
+.process{padding-block:clamp(96px,12vw,160px);background:var(--bg-section)}
+.process__head{max-width:680px;margin:0 auto 48px;padding:0 var(--pad);text-align:center}
+.process__lede{font-size:15px;line-height:2;color:var(--text-body);max-width:30em;margin:0 auto;letter-spacing:.05em}
+.process__steps{max-width:780px;margin:0 auto;padding:0 var(--pad);display:flex;flex-direction:column;gap:0}
+.process__step{display:grid;grid-template-columns:90px 1fr;gap:24px;padding:26px 0;border-top:1px solid var(--border-strong);align-items:start}
+.process__step:last-child{border-bottom:1px solid var(--border-strong)}
+.process__step .min{font-family:var(--ff-num);font-weight:600;font-style:italic;font-size:13px;letter-spacing:.16em;color:var(--c-renga);padding-top:5px}
+.process__step h4{font-family:var(--ff-mincho);font-weight:600;font-size:16.5px;color:var(--c-ai);margin-bottom:10px;letter-spacing:.05em}
+.process__step p{font-size:14.5px;line-height:1.95;color:var(--text-body)}
+@media (max-width:680px){.process__step{grid-template-columns:1fr;gap:6px}.process__step .min{padding:0}}
+
+/* ===== price condensed ===== */
+.pricec{padding-block:clamp(80px,11vw,140px);background:var(--bg-base)}
+.pricec__inner{max-width:680px;margin:0 auto;padding:0 var(--pad)}
+.pricec__head{text-align:center;margin-bottom:32px}
+.pricec__feat{
+  text-align:center;font-family:var(--ff-mincho);font-weight:700;
+  font-size:clamp(28px,3.6vw,36px);color:var(--c-ai);letter-spacing:.04em;
+  padding:28px 0;border-block:1px solid var(--border-strong);margin-bottom:18px;
+}
+.pricec__feat .strike{font-size:.45em;color:var(--c-mute);text-decoration:line-through;font-weight:400;display:inline-block;margin-right:14px;letter-spacing:.06em}
+.pricec__feat small{font-size:.4em;color:var(--c-mute);font-weight:500;letter-spacing:.16em;display:block;margin-top:8px}
+.pricec__list{display:flex;flex-direction:column;gap:0;font-size:14.5px}
+.pricec__list .row{display:flex;justify-content:space-between;padding:14px 0;border-bottom:1px solid var(--border)}
+.pricec__list .row .lbl{color:var(--text-body)}
+.pricec__list .row .yen{font-family:var(--ff-mincho);font-weight:600;color:var(--c-ai);letter-spacing:.04em}
+.pricec__note{margin-top:24px;font-size:12px;line-height:1.9;color:var(--c-mute);letter-spacing:.04em}
+.pricec__note + .pricec__note{margin-top:6px}
+
+/* ===== compact voice ===== */
+.vbrief{padding-block:clamp(80px,10vw,120px);background:var(--bg-section)}
+.vbrief__inner{max-width:780px;margin:0 auto;padding:0 var(--pad)}
+.vbrief__head{text-align:center;margin-bottom:36px}
+.vbrief__h{font-family:var(--ff-mincho);font-weight:600;font-size:clamp(20px,2.4vw,24px);color:var(--c-ai);letter-spacing:.06em;line-height:1.7}
+.vbrief__list{display:flex;flex-direction:column;gap:0}
+.vbrief__row{display:grid;grid-template-columns:170px 1fr;gap:24px;padding:22px 0;border-top:1px solid var(--border-strong);align-items:start}
+.vbrief__row:last-child{border-bottom:1px solid var(--border-strong)}
+.vbrief__who{font-family:var(--ff-mincho);font-weight:500;font-size:13px;letter-spacing:.06em;color:var(--c-mute);padding-top:4px;line-height:1.7}
+.vbrief__text{font-size:14.5px;line-height:1.95;color:var(--text-body)}
+.vbrief__text::before{content:"\201C";font-family:var(--ff-mincho);color:var(--c-asagi);opacity:.5;font-size:18px;margin-right:4px}
+.vbrief__note{margin-top:18px;font-size:11.5px;color:var(--c-mute-2);letter-spacing:.04em;text-align:center}
+@media (max-width:680px){.vbrief__row{grid-template-columns:1fr;gap:6px}}
+
+/* ===== promises-we-dont section ===== */
+.dont{padding-block:clamp(80px,11vw,140px);background:var(--c-ai);color:#fff;position:relative;overflow:hidden}
+.dont::before{content:"";position:absolute;inset:0;background:radial-gradient(ellipse at 20% 20%,rgba(94,138,140,.18),transparent 55%),radial-gradient(ellipse at 80% 80%,rgba(184,84,80,.15),transparent 55%);pointer-events:none}
+.dont__inner{position:relative;z-index:1;max-width:680px;margin:0 auto;padding:0 var(--pad)}
+.dont__head{margin-bottom:36px;text-align:center}
+.dont__head .h2{color:#fff}
+.dont__head .kicker{color:#d4b98a}
+.dont__head .kicker::before{background:#d4b98a}
+.dont__head .kicker .num{color:#fff}
+.dont__list{display:flex;flex-direction:column;gap:14px}
+.dont__item{font-family:var(--ff-mincho);font-weight:500;font-size:15.5px;line-height:1.9;letter-spacing:.04em;padding:18px 22px;background:rgba(255,255,255,.06);border-left:2px solid #d4b98a;color:#f3eddd}
+.dont__item em{color:#d4b98a;font-style:normal;font-weight:600}
+
+/* ===== book (FAQ + access + CTA merged flow) ===== */
+.book{padding-block:clamp(96px,12vw,160px);background:var(--bg-base)}
+.book__head{text-align:center;margin-bottom:40px;max-width:680px;margin-inline:auto;padding:0 var(--pad)}
+.book__steps{max-width:880px;margin:0 auto 48px;padding:0 var(--pad);display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+.book__step{padding:22px 20px;background:#fff;border-top:2px solid var(--c-ai)}
+.book__step .no{font-family:var(--ff-num);font-style:italic;font-size:12px;letter-spacing:.16em;color:var(--c-renga);margin-bottom:8px;display:block}
+.book__step h4{font-family:var(--ff-mincho);font-weight:600;font-size:15px;color:var(--c-ai);margin-bottom:8px;letter-spacing:.05em}
+.book__step p{font-size:13px;line-height:1.85;color:var(--text-body)}
+@media (max-width:680px){.book__steps{grid-template-columns:1fr}}
+.book__cta{text-align:center;max-width:680px;margin:0 auto;padding:0 var(--pad)}
+.book__cta-buttons{display:flex;justify-content:center;gap:14px;flex-wrap:wrap;margin-bottom:18px}
+.book__cta-buttons .btn{flex:1 1 240px;max-width:300px}
+.book__meta{font-size:12px;color:var(--c-mute);letter-spacing:.1em;margin-top:14px}
+.book__access{max-width:780px;margin:48px auto 0;padding:32px 32px;background:#fff;border:1px solid var(--border-strong);font-size:15px;line-height:2}
+.book__access dl{display:grid;grid-template-columns:auto 1fr;gap:14px 24px}
+.book__access dt{font-family:var(--ff-mincho);font-weight:600;font-size:13.5px;letter-spacing:.18em;color:var(--c-renga);padding-top:4px;min-width:6em}
+.book__access dd{font-family:var(--ff-mincho);font-weight:500;letter-spacing:.04em;color:var(--c-sumi);font-size:15px}
+.book__access dd small{display:block;font-family:var(--ff-sans);font-weight:400;font-size:12.5px;color:var(--c-ink);margin-top:4px;letter-spacing:.04em}
+.book__map{max-width:780px;margin:24px auto 0;height:280px;background:#fff;border:1px solid var(--border-strong)}
+.book__map iframe{width:100%;height:100%;border:0;filter:saturate(.9) contrast(1.02)}
+
+/* ===== prefers-reduced-motion ===== */
+@media (prefers-reduced-motion:reduce){
+  *,*::before,*::after{animation:none!important;transition:none!important}
+  .reveal{opacity:1;transform:none}
+}
 </style>
+
+<!-- GA4 (本番ドメインでのみロード) -->
+<script>
+window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
+if(location.hostname==='aiweb-lab.com'){
+  const s=document.createElement('script');
+  s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KFF7C0B7F';
+  document.head.appendChild(s);
+  gtag('js',new Date());
+  gtag('config','G-5KFF7C0B7F',{anonymize_ip:true});
+}
+</script>
 </head>
 <body>
-<header class="site-header" data-elevated="true">
-  <div class="container header-inner">
-    <a href="../index.html" class="brand">
-      <span class="brand-mark"><svg viewBox="0 0 32 32" width="28" height="28"><defs><linearGradient id="lg" x1="0" y1="0" x2="1" y2="1"><stop offset="0%" stop-color="#6ee7ff"/><stop offset="100%" stop-color="#a78bfa"/></linearGradient></defs><rect x="2" y="2" width="28" height="28" rx="8" fill="none" stroke="url(#lg)" stroke-width="2"/><path d="M10 22 L16 10 L22 22 M12.5 18 H19.5" stroke="url(#lg)" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" fill="none"/></svg></span>
-      <span class="brand-text">aiweb-lab</span>
-    </a>
-    <a href="../index.html#demos" class="btn-ghost" style="padding:8px 18px;font-size:13px">← 実績一覧に戻る</a>
+
+<!-- ===== demo banner ===== -->
+<div class="demo-banner" role="alert">
+  <strong>架空クライアント向けデモLP</strong>整体院「凪」は実在しません。<a href="../index.html">aiweb-lab で制作</a>
+</div>
+
+<!-- ===== site header ===== -->
+<header class="hdr" id="hdr">
+  <div class="hdr__inner">
+    <a href="#top" class="hdr__brand">凪<small>nagi</small></a>
+    <nav class="hdr__nav" id="nav">
+      <a href="#profile">施術者</a>
+      <a href="#process">手順</a>
+      <a href="#pricec">料金</a>
+      <a href="#voice">声</a>
+      <a href="#book">予約</a>
+    </nav>
+    <div class="hdr__cta-group">
+      <a href="tel:0612345678" class="hdr__tel">☎ 06-1234-5678</a>
+      <a href="#" class="hdr__line" onclick="alert('デモLPのため、実際の予約はできません。');return false;">LINEで予約</a>
+      <button class="hdr__burger" id="burger" aria-label="メニューを開く" aria-expanded="false" aria-controls="nav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
   </div>
 </header>
-<main class="demo-cs">
-  <div>
-    <span class="badge"><i class="dot"></i>Demo Coming Soon</span>
-    <h1>整体院<br><b>"凪（なぎ）"</b></h1>
-    <p>
-      肩こり・腰痛の慢性症状改善に特化した整体院向けデモLP。<br>
-      LINE予約・症例写真・口コミ・院長紹介を軸に、安心感を構築する構成で制作中です。
-    </p>
-    <p style="font-size:13px;color:var(--fg-subtle)">
-      ※ デモは架空のサービスです。<br>
-      公開予定：2026年6月中旬
-    </p>
-    <a class="btn-primary back" href="../index.html#contact">この業種で相談する</a>
+
+<main>
+
+<!-- ===== 01 hero ===== -->
+<section class="hero2" id="top" aria-label="メインビジュアル">
+  <span class="hero2__tate" aria-hidden="true">その肩、ずっと我慢してきましたよね</span>
+  <div class="hero2__inner">
+    <p class="hero2__eyebrow">大阪市西淀川区 千舟／女性施術者ひとりの整体院</p>
+    <h1 class="hero2__title">鳴らさず、ゆっくり。<br class="br-pc">肩と腰の<em>慢性専門</em>。</h1>
+    <p class="hero2__sub">鈴木です。十年、慢性の肩こり腰痛だけ診てきました。<br class="br-pc">1日4名までの完全予約制で、ひとり静かに通っていただけます。</p>
+    <div class="hero2__cta">
+      <a href="#profile" class="ll">はじめての方へ →</a>
+    </div>
   </div>
+</section>
+
+<!-- ===== 02 施術者プロフィール（横長カード1個） ===== -->
+<section class="profile" id="profile">
+  <div class="profile__inner reveal">
+    <div class="profile__card">
+      <div class="profile__ph" aria-hidden="true"><span>— Portrait / 撮影予定</span></div>
+      <div>
+        <p class="profile__name">鈴木&nbsp;萌<small>すずき&nbsp;もえ／柔道整復師（国家資格）／臨床10年・のべ4,200名ほど</small></p>
+        <p class="profile__intro">最初の5年は大手の整骨院で、1日30人くらい診てました。「あの人、結局よくならなかったな」が積み上がってくのが、しんどくて。独立してからは肩と腰の慢性だけに絞って、<em>1日4名まで</em>にしています。鳴らすのが苦手な人、強もみで悪化した人が、ここを最後に選んでくれることが多いです。</p>
+        <p class="profile__sig">── 鈴木&nbsp;萌</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 05 触れ方と、当日の手順 ===== -->
+<section class="process" id="process">
+  <div class="process__head reveal">
+    <h2 class="h2">施術</h2>
+    <p class="process__lede">指圧で深いところまで、ゆっくり届かせます。<br>受付から会計まで個室ひとつで動かず、所要は90分ほど。</p>
+  </div>
+  <div class="process__steps reveal">
+    <div class="process__step">
+      <span class="min">00 min</span>
+      <div><h4>到着</h4><p>5分前で大丈夫です。表のチャイムを押したら、靴のままどうぞ。</p></div>
+    </div>
+    <div class="process__step">
+      <span class="min">+ 5 min</span>
+      <div><h4>問診（20分）</h4><p>今日どこを触るかは、話を聞いてから決めます。眠れた日数まで聞きます。</p></div>
+    </div>
+    <div class="process__step">
+      <span class="min">+ 25 min</span>
+      <div><h4>着替えと姿勢の見立て</h4><p>立ち姿と歩き方を、目で見ます。</p></div>
+    </div>
+    <div class="process__step">
+      <span class="min">+ 35 min</span>
+      <div><h4>施術（60分）</h4><p>奥に、ゆっくり置いていきます。ボキボキはなし。寝てしまっても、そのままで大丈夫です。</p></div>
+    </div>
+    <div class="process__step">
+      <span class="min">+ 90 min</span>
+      <div><h4>一杯飲んで、会計</h4><p>白湯、ルイボス、カモミールからお好きなものをどうぞ。</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== 06 お金の話 ===== -->
+<section class="pricec" id="pricec">
+  <div class="pricec__inner reveal">
+    <div class="pricec__head">
+      <h2 class="h2">料金</h2>
+    </div>
+    <p class="pricec__feat"><span class="strike">¥8,800</span>初回 ¥4,980<small>税込／施術60分・所要およそ90分</small></p>
+    <div class="pricec__list">
+      <div class="row"><span class="lbl">2回目以降（施術60分／所要およそ70分）</span><span class="yen">¥6,800</span></div>
+      <div class="row"><span class="lbl">回数券 5回分（6ヶ月有効）</span><span class="yen">¥30,000</span></div>
+      <div class="row"><span class="lbl">月2回サブスク（いつでもやめられます）</span><span class="yen">¥8,800 / 月</span></div>
+    </div>
+    <p class="pricec__note">すべて税込。お支払いは現金、カード、PayPay、LINE Pay が使えます。キャンセルは前日18時までなら無料、当日は施術料の半額、ご連絡なしの場合は全額です。<br>「通常 ¥8,800」は、このキャンペーン前に8週間以上いただいていた金額です。回数券やサブスクは、聞かれたときだけお話ししています。</p>
+  </div>
+</section>
+
+<!-- ===== 07 通われた方の声から ===== -->
+<section class="vbrief" id="voice">
+  <div class="vbrief__inner reveal">
+    <div class="vbrief__head">
+      <p class="vbrief__h">通われてる方の声</p>
+    </div>
+    <div class="vbrief__list">
+      <div class="vbrief__row">
+        <span class="vbrief__who">田中さん／42／経理<br>40代 肩こり・西淀川区</span>
+        <p class="vbrief__text">鳴らされるのが怖くて、整体を3軒変えてきました。ここがダメだったら諦めようと思って来たんですけど、押される場所が「あ、ここ」って自分で思ってた所と合ってて、それで通うことに決めました。</p>
+      </div>
+      <div class="vbrief__row">
+        <span class="vbrief__who">山口さん／54／保育士<br>50代 腰痛・淀川区</span>
+        <p class="vbrief__text">腰痛と8年付き合ってきて、毎月どこかには通ってました。凪に変えてから、月1回で済むようになって、湿布のストックが減ってないことに最近気づきました。</p>
+      </div>
+      <div class="vbrief__row">
+        <span class="vbrief__who">N.T.さん／57／主婦<br>50代 肩こり首こり・西淀川区</span>
+        <p class="vbrief__text">「次は何回コースで」と勧められるのが嫌で、整体院を何軒も変えてきました。ここでは一度もそういう話をされたことがなく、毎回鈴木さんが担当で前回の話を覚えてくれてる。それで続いています。</p>
+      </div>
+    </div>
+    <p class="vbrief__note">※ご本人の許可をもらって、個人が特定されない形で載せています。感じ方や変化には、個人差があります。</p>
+  </div>
+</section>
+
+<!-- ===== 08 言わないこと ===== -->
+<section class="dont" id="dont">
+  <div class="dont__inner reveal">
+    <div class="dont__head">
+      <h2 class="h2">ご注意</h2>
+    </div>
+    <ul class="dont__list">
+      <li class="dont__item">「<em>○回で治ります</em>」のような回数のお約束はしていません。何回必要かは、体しだいです。</li>
+      <li class="dont__item"><em>強い刺激やボキボキ</em>は扱っていないので、希望される方には合いません。</li>
+      <li class="dont__item"><em>完全予約制</em>です。当日の飛び込みでのご来店はお受けしていません。</li>
+      <li class="dont__item">当日のキャンセルは<em>料金が発生</em>します。詳細は料金欄をご覧ください。</li>
+      <li class="dont__item">発熱や強い倦怠感のある日は、<em>無理せずお控えください</em>。振替のご相談に応じます。</li>
+      <li class="dont__item">当院は民間整体院のため、<em>健康保険は使えません</em>。すべて自費でのご案内です。</li>
+    </ul>
+  </div>
+</section>
+
+<!-- ===== 09 はじめての方へ ===== -->
+<section class="book" id="book">
+  <div class="book__head reveal">
+    <h2 class="h2">予約</h2>
+    <p class="lede" style="margin-inline:auto;text-align:center">LINEからが早いです。「相談だけしたい」って方も、わりといます。</p>
+  </div>
+  <div class="book__steps reveal">
+    <div class="book__step">
+      <span class="no">Step 01</span>
+      <h4>LINEか電話で、ひとこと</h4>
+      <p>電話は9〜18時、私（鈴木）が出ます。</p>
+    </div>
+    <div class="book__step">
+      <span class="no">Step 02</span>
+      <h4>来たい日を、第3希望まで</h4>
+      <p>空きをすぐお返しします。</p>
+    </div>
+    <div class="book__step">
+      <span class="no">Step 03</span>
+      <h4>当日は手ぶらで</h4>
+      <p>所要90分、お子さま連れもどうぞ。</p>
+    </div>
+  </div>
+  <div class="book__cta reveal">
+    <div class="book__cta-buttons">
+      <a href="#" class="btn btn--primary btn--lg" onclick="alert('デモLPのため、実際の予約はできません。');return false;">LINEで予約する</a>
+      <a href="tel:0612345678" class="btn btn--ghost btn--lg">☎ 06-1234-5678</a>
+    </div>
+    <p class="book__meta">初回 ¥4,980／施術60分／完全予約制／西淀川区 千舟（火・木は女性専用日）</p>
+  </div>
+  <div class="book__access reveal">
+    <dl>
+      <dt>屋号</dt><dd>整体院 凪（なぎ）</dd>
+      <dt>所在</dt><dd>大阪市西淀川区千舟3-X-X 千舟YKビル 2F<small>※住所はデモのためのサンプルです</small></dd>
+      <dt>道のり</dt><dd>阪神「千船」駅から徒歩3分／JR「御幣島」駅から徒歩9分</dd>
+      <dt>ひらく時間</dt><dd>10:00 – 19:00（最後の受付は18:00）</dd>
+      <dt>お休み</dt><dd>毎週水曜と第3日曜<small>火・木は女性のみ</small></dd>
+      <dt>お電話</dt><dd>06-1234-5678<small>9時から18時まで、わたしが出ます</small></dd>
+    </dl>
+  </div>
+  <div class="book__map reveal" aria-hidden="true">
+    <iframe
+      src="https://www.google.com/maps?q=%E5%A4%A7%E9%98%AA%E5%B8%82%E8%A5%BF%E6%B7%80%E5%B7%9D%E5%8C%BA%E5%8D%83%E8%88%9F3%E4%B8%81%E7%9B%AE&output=embed"
+      title="整体院 凪 地図 ─ 大阪市西淀川区千舟3丁目"
+      loading="lazy" referrerpolicy="no-referrer-when-downgrade"
+      allowfullscreen></iframe>
+  </div>
+</section>
+
 </main>
+
+<!-- ===== footer ===== -->
+<footer class="foot">
+  <div class="foot__inner">
+    <div class="foot__top">
+      <div>
+        <p class="foot__brand">凪<small>nagi</small></p>
+        <p class="foot__desc">大阪・千舟の小さな整体院。<br class="br-pc">肩こりと腰痛、10年ぶん向き合ってきました。</p>
+      </div>
+      <div>
+        <h5>Menu</h5>
+        <ul>
+          <li><a href="#profile">はじめての方へ</a></li>
+          <li><a href="#process">施術のながれ</a></li>
+          <li><a href="#pricec">料金のこと</a></li>
+          <li><a href="#voice">いただいた声</a></li>
+        </ul>
+      </div>
+      <div>
+        <h5>Contact</h5>
+        <ul>
+          <li>大阪市西淀川区千舟3-X-X<br>千舟YKビル 2F</li>
+          <li>☎ 06-1234-5678</li>
+          <li><a href="#" onclick="alert('デモLPのため、実際の予約はできません。');return false;">LINEでご予約</a></li>
+          <li><a href="#book">お問い合わせ</a></li>
+        </ul>
+        <a class="foot__google" href="#" onclick="alert('デモLPのため、リンクは無効です。');return false;">Googleに口コミを残す</a>
+      </div>
+    </div>
+    <p class="foot__disclaimer">
+      <strong>このページは制作例です。</strong>aiweb-lab が「整体院ならこう作る」を見ていただくために用意しました。屋号の「凪」、写っている方、住所、電話番号、営業時間、施術実績、お客様の声 — すべて架空です。写真の一部は Unsplash などのフリー素材で、本文中の方とは関係ありません。本物の制作のご相談は <a href="../index.html">aiweb-lab.com</a> へどうぞ。
+    </p>
+    <div class="foot__bottom">
+      <span>© 2026 NAGI（demo）</span>
+      <span>制作：aiweb-lab.com</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== mobile sticky CTA ===== -->
+<nav class="mbar" id="mbar" aria-label="モバイル予約バー">
+  <a href="tel:0612345678" class="tel">☎ 電話する</a>
+  <a href="#" class="line" onclick="alert('デモLPのため、実際の予約はできません。');return false;">LINEで予約</a>
+</nav>
+
+<!-- ===== PC floating CTA ===== -->
+<a href="#book" class="pcta" id="pcta">LINEで予約 →</a>
+
+<script>
+(() => {
+  // burger
+  const burger = document.getElementById('burger');
+  const nav = document.getElementById('nav');
+  if (burger && nav) {
+    const setOpen = (open) => {
+      burger.classList.toggle('is-open', open);
+      nav.classList.toggle('is-open', open);
+      burger.setAttribute('aria-expanded', String(open));
+      document.body.style.overflow = open ? 'hidden' : '';
+    };
+    burger.addEventListener('click', () => setOpen(!nav.classList.contains('is-open')));
+    nav.querySelectorAll('a').forEach(a => a.addEventListener('click', () => setOpen(false)));
+    document.addEventListener('keydown', e => { if (e.key === 'Escape') setOpen(false); });
+  }
+
+  // reveal
+  const io = new IntersectionObserver(entries => {
+    entries.forEach(e => {
+      if (e.isIntersecting) { e.target.classList.add('is-in'); io.unobserve(e.target); }
+    });
+  }, {threshold:.15, rootMargin:'0px 0px -8% 0px'});
+  document.querySelectorAll('.reveal,.pain__list').forEach(el => io.observe(el));
+
+  // faq accordion
+  document.querySelectorAll('.faq__item').forEach(item => {
+    const btn = item.querySelector('.faq__q');
+    btn.addEventListener('click', () => {
+      const open = item.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', String(open));
+    });
+  });
+
+  // hide floating CTA when book section in view
+  const pcta = document.getElementById('pcta');
+  const mbar = document.getElementById('mbar');
+  const book = document.getElementById('book');
+  if (book) {
+    const bookIO = new IntersectionObserver(([e]) => {
+      pcta && pcta.classList.toggle('is-hidden', e.isIntersecting);
+      mbar && mbar.classList.toggle('is-hidden', e.isIntersecting);
+    }, {threshold:.25});
+    bookIO.observe(book);
+  }
+
+  // hide pcta initially before scrolling past hero
+  if (pcta) pcta.classList.add('is-hidden');
+  const hero = document.getElementById('top');
+  if (hero && pcta) {
+    const heroIO = new IntersectionObserver(([e]) => {
+      pcta.classList.toggle('is-hidden', e.isIntersecting);
+    }, {threshold:.1});
+    heroIO.observe(hero);
+  }
+})();
+</script>
 </body>
 </html>

@@ -33,7 +33,7 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Shippori+Mincho:wght@500;700;800&display=swap" onload="this.onload=null;this.rel='stylesheet'">
 <noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Shippori+Mincho:wght@500;700;800&display=swap"></noscript>
-<link rel="stylesheet" href="assets/css/style.css">
+<link rel="stylesheet" href="assets/css/style.css?v=20260605">
 
 <script type="application/ld+json">
 {
@@ -49,7 +49,7 @@
       "description":"AIを活用した個人事業主向けWeb制作・保守運用スタジオ",
       "areaServed":"JP",
       "foundingDate":"2026",
-      "email":"aiweb.lab.jp@gmail.com"
+      "email":"tai028780@gmail.com"
     },
     {
       "@type":"Service",
@@ -59,20 +59,22 @@
       "areaServed":"JP",
       "serviceType":"Web Development",
       "offers":[
-        {"@type":"Offer","name":"LP制作","price":"100000","priceCurrency":"JPY"},
-        {"@type":"Offer","name":"コーポレートサイト制作","price":"150000","priceCurrency":"JPY"},
-        {"@type":"Offer","name":"月額保守","price":"15000","priceCurrency":"JPY","priceSpecification":{"@type":"UnitPriceSpecification","billingIncrement":1,"unitCode":"MON"}}
+        {"@type":"Offer","name":"LP制作","price":"110000","priceCurrency":"JPY","priceSpecification":{"@type":"PriceSpecification","price":"110000","priceCurrency":"JPY","valueAddedTaxIncluded":true}},
+        {"@type":"Offer","name":"コーポレートサイト制作","price":"165000","priceCurrency":"JPY","priceSpecification":{"@type":"PriceSpecification","price":"165000","priceCurrency":"JPY","valueAddedTaxIncluded":true}},
+        {"@type":"Offer","name":"月額保守","price":"16500","priceCurrency":"JPY","priceSpecification":{"@type":"UnitPriceSpecification","price":"16500","priceCurrency":"JPY","valueAddedTaxIncluded":true,"billingIncrement":1,"unitCode":"MON"}}
       ]
     },
     {
       "@type":"FAQPage",
+      "@id":"https://aiweb-lab.com/#faq",
       "mainEntity":[
-        {"@type":"Question","name":"学生でも依頼して大丈夫ですか？","acceptedAnswer":{"@type":"Answer","text":"はい、もちろんです。実務経験と最新AIツールを活用し、プロと同等の品質を提供しています。デモサイトもご覧いただけます。"}},
-        {"@type":"Question","name":"修正は何回まで可能ですか？","acceptedAnswer":{"@type":"Answer","text":"制作期間中は無制限です。納品後は月額保守内で対応します。"}},
-        {"@type":"Question","name":"納期はどれくらいですか？","acceptedAnswer":{"@type":"Answer","text":"LPで2週間、コーポレートで3週間が目安です。お急ぎの場合はご相談ください。"}},
-        {"@type":"Question","name":"保守は解約できますか？","acceptedAnswer":{"@type":"Answer","text":"はい、いつでも可能です。最低契約期間はありません。"}},
-        {"@type":"Question","name":"著作権はどうなりますか？","acceptedAnswer":{"@type":"Answer","text":"納品後、デザイン・コードの権利はすべてお客様に帰属します。"}},
-        {"@type":"Question","name":"支払い方法は？","acceptedAnswer":{"@type":"Answer","text":"銀行振込に対応しています。着手金50% + 納品時50%の2回払いが基本です。"}}
+        {"@type":"Question","name":"学生でも依頼して大丈夫ですか？","acceptedAnswer":{"@type":"Answer","text":"はい、もちろんです。実務経験と最新のAIツールを活用し、プロと同等の品質を提供しています。デモLPと月額保守の運用体制で、納品後も継続的にサポート可能です。"}},
+        {"@type":"Question","name":"修正は何回まで可能ですか？","acceptedAnswer":{"@type":"Answer","text":"制作中は規定回数まで無料です。納品後は月額保守内（月2回まで）で対応します。"}},
+        {"@type":"Question","name":"納期はどれくらいですか？","acceptedAnswer":{"@type":"Answer","text":"LPで2週間、コーポレートで3週間が目安です。お急ぎの場合は1週間〜での対応もご相談ください（特急料金あり）。"}},
+        {"@type":"Question","name":"保守を解約することはできますか？","acceptedAnswer":{"@type":"Answer","text":"はい、いつでも可能です。最低契約期間はありません。月の途中解約も日割り対応します。"}},
+        {"@type":"Question","name":"著作権はどうなりますか？","acceptedAnswer":{"@type":"Answer","text":"納品後、デザイン・コードの権利はすべてお客様に帰属します。第三者への譲渡・改変も自由です。"}},
+        {"@type":"Question","name":"支払い方法は？","acceptedAnswer":{"@type":"Answer","text":"銀行振込に対応しています。着手金50% + 納品時50%の2回払いが基本です。法人の場合は請求書払い（月末締め翌月末払い）にも対応します。"}},
+        {"@type":"Question","name":"AIで作るのって、品質は大丈夫ですか？","acceptedAnswer":{"@type":"Answer","text":"よくいただく質問です。答えは「むしろ品質が上がります」。AIに任せるのはコーディング・画像生成・文章のたたき台など作業の部分だけ。事業理解・戦略設計・最終品質チェックは人間が時間をかけて行います。AIで浮いた時間は、すべてあなたの事業理解に使います。"}}
       ]
     }
   ]
@@ -84,10 +86,10 @@
 window.dataLayer=window.dataLayer||[];function gtag(){dataLayer.push(arguments)}
 if(location.hostname==='aiweb-lab.com'){
   const s=document.createElement('script');
-  s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX';
+  s.async=true;s.src='https://www.googletagmanager.com/gtag/js?id=G-5KFF7C0B7F';
   document.head.appendChild(s);
   gtag('js',new Date());
-  gtag('config','G-XXXXXXXXXX',{anonymize_ip:true});
+  gtag('config','G-5KFF7C0B7F',{anonymize_ip:true});
 }
 </script>
 </head>
@@ -270,7 +272,7 @@ if(location.hostname==='aiweb-lab.com'){
   <div class="container">
     <header class="section-head">
       <span class="eyebrow">Demo / Works</span>
-      <h2 id="s-demos" class="reveal">業種別デモ</h2>
+      <h2 id="s-demos" class="reveal">業種別デモサイト</h2>
       <p class="lead reveal" style="--d:.1s">
         「あなたの業種で何が作れるか」を、架空のクライアント案件として実装。<br>
         実案件と同水準のクオリティで作っているので、これがそのまま実力の証明です。
@@ -280,45 +282,30 @@ if(location.hostname==='aiweb-lab.com'){
       <a class="card demo reveal" href="demos/gym.html" style="--d:.1s">
         <div class="demo-thumb gym" aria-hidden="true">
           <span class="plan-tag">LP制作例 / 10万円〜</span>
-          <div class="thumb-overlay"></div>
-          <div class="thumb-content">
-            <span class="thumb-tag">パーソナルジム</span>
-            <p class="thumb-h">3ヶ月後、別人の自分に。</p>
-          </div>
         </div>
         <div class="demo-body">
           <h3>パーソナルジム "FORGE"</h3>
-          <p>ストイック系の本格パーソナルジム。Before/After・トレーナー紹介・料金比較を軸に、行動を促す構成。</p>
+          <p>経営者向けの週2×60分集中ボディメイク。鋼の和モダン×編集者風組版、章番号の漢数字、書簡型・写真ベゼル型など均一カードを避けた構成。全額返金保証も商品の一部として全部出す方針。</p>
           <span class="demo-link">デモを見る →</span>
         </div>
       </a>
       <a class="card demo reveal" href="demos/salon.html" style="--d:.2s">
         <div class="demo-thumb salon" aria-hidden="true">
           <span class="plan-tag">LP制作例 / 10万円〜</span>
-          <div class="thumb-overlay"></div>
-          <div class="thumb-content">
-            <span class="thumb-tag">整体院・治療院</span>
-            <p class="thumb-h">その肩こり、3回で消える。</p>
-          </div>
         </div>
         <div class="demo-body">
           <h3>整体院 "凪（なぎ）"</h3>
-          <p>肩こり・腰痛の慢性症状改善に特化。LINE予約・症例写真・口コミで安心感を構築。</p>
+          <p>慢性の肩こり腰痛だけを十年扱う、女性ひとりの整体院LP。鳴らさない／押し売りしない／1日4名の特色を、装飾を削ったエッセイ風レイアウトで。</p>
           <span class="demo-link">デモを見る →</span>
         </div>
       </a>
-      <a class="card demo reveal" href="demos/coach.html" style="--d:.3s">
-        <div class="demo-thumb coach" aria-hidden="true">
-          <span class="plan-tag">コーポレート制作例 / 15万円〜</span>
-          <div class="thumb-overlay"></div>
-          <div class="thumb-content">
-            <span class="thumb-tag">オンラインコーチ・講座運営</span>
-            <p class="thumb-h">なんとなく不安な毎日から。</p>
-          </div>
+      <a class="card demo reveal" href="demos/academy.html" style="--d:.3s">
+        <div class="demo-thumb academy" aria-hidden="true">
+          <span class="plan-tag">サービスLP制作例 / 15万円〜</span>
         </div>
         <div class="demo-body">
-          <h3>キャリアコーチ "Compass"</h3>
-          <p>高単価コーチング向け長文LP。受講生インタビュー・メソッド図解・無料相談予約まで。</p>
+          <h3>マーケター講座＆サロン "SIGNAL"</h3>
+          <p>B2B SaaS／DTCのマーケター向け6ヶ月コホート型講座＋修了後の月額サロンのLP。チラシ感を残しつつ低彩度の青で抑え、共感→主宰→メソッド→料金→FAQまで情報量多めに整列。</p>
           <span class="demo-link">デモを見る →</span>
         </div>
       </a>
@@ -364,7 +351,7 @@ if(location.hostname==='aiweb-lab.com'){
       <li class="reveal" style="--d:.05s">
         <span class="step">01</span>
         <h3>ヒアリング（無料）</h3>
-        <p>事業内容・ターゲット・ご予算を伺います。Zoom60分。</p>
+        <p>事業内容・ターゲット・ご予算を伺います。メールのみで完結（電話・面談なし）。</p>
       </li>
       <li class="reveal" style="--d:.1s">
         <span class="step">02</span>
@@ -569,13 +556,18 @@ if(location.hostname==='aiweb-lab.com'){
         <textarea id="f-msg" name="message" rows="6" required aria-required="true" placeholder="例：パーソナルジムを開業予定で、集客用のLPを作りたいです。予算は10万円前後、納期は2〜3週間希望です。"></textarea>
       </div>
       <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
+      <div class="form-consent">
+        <label class="form-consent-label">
+          <input type="checkbox" name="consent" required aria-required="true">
+          <span><a href="privacy.html" target="_blank" rel="noopener">プライバシーポリシー</a>および<a href="tokushoho.html" target="_blank" rel="noopener">特定商取引法に基づく表記</a>に同意します（海外サーバ（米国）でのデータ処理を含む）</span>
+        </label>
+      </div>
       <button type="submit" class="btn-primary submit" data-ga="form_submit">
         送信する
         <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M5 12h14M13 5l7 7-7 7" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
       </button>
       <p class="form-note">
-        送信前に <a href="privacy.html">プライバシーポリシー</a> をご確認ください。<br>
-        メールでのご連絡：<a href="mailto:aiweb.lab.jp@gmail.com">aiweb.lab.jp@gmail.com</a>
+        メールでのご連絡：<a href="mailto:tai028780@gmail.com">tai028780@gmail.com</a>
       </p>
     </form>
   </div>
@@ -609,11 +601,11 @@ if(location.hostname==='aiweb-lab.com'){
         <h4>運営者情報</h4>
         <ul class="biz">
           <li><span>屋号</span>aiweb-lab</li>
-          <li><span>代表者</span>〇〇〇〇</li>
-          <li><span>所在地</span>東京都〇〇区</li>
-          <li><span>メール</span><a href="mailto:aiweb.lab.jp@gmail.com">aiweb.lab.jp@gmail.com</a></li>
+          <li><span>代表者</span>木野 蓮翔</li>
+          <li><span>所在地</span>東京都江東区</li>
+          <li><span>メール</span><a href="mailto:tai028780@gmail.com">tai028780@gmail.com</a></li>
           <li><span>営業時間</span>24時間メール受付（返信は2営業日以内）</li>
-          <li><span>特商法表記</span>ご請求時に書面でご案内します</li>
+          <li><span>特商法表記</span><a href="tokushoho.html">こちらをご確認ください</a></li>
         </ul>
       </div>
       <div>
