@@ -112,7 +112,7 @@
       if (action.includes('REPLACE_WITH_YOUR_FORM_ID')) {
         e.preventDefault();
         const get = n => f.querySelector(`[name="${n}"]`)?.value || '';
-        const subject = encodeURIComponent('【aiweb-lab】無料相談のご相談');
+        const subject = encodeURIComponent('【aiweb】無料相談のご相談');
         const body = encodeURIComponent(
           `お名前: ${get('name')}\nメール: ${get('email')}\n業種: ${get('industry')}\nプラン: ${get('plan')}\n\n${get('message')}`
         );
